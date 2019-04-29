@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\build\common.props" />
+  <PropertyGroup>
+    <AssemblyName>Cosmos.Business.Extensions.MimeTypeSniffer</AssemblyName>
+    <PackageId>Cosmos.Business.Extensions.MimeTypeSniffer</PackageId>
+    <Description>Mine type sniffer for Cosmos Business Extensions.</Description>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>7.2</LangVersion>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Cosmos.Business.Extensions.FileTypeSniffer" Version="0.1.1" />
+  </ItemGroup>
+
+</Project>

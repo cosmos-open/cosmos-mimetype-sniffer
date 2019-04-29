@@ -1,0 +1,20 @@
+<Project>
+
+	<Import Project="version.props" />
+
+	<PropertyGroup Label="Build">
+		<TargetFramework>netstandard2.0</TargetFramework>
+	</PropertyGroup>
+
+	<PropertyGroup Label="Package">
+		<Product>Cosmos.Business.MimeTypeSniffer</Product>
+		<Authors>AlexLEWIS;dotnetcore;StarrySky;Cosmos</Authors>
+		<RepositoryUrl>https://github.com/cosmos-open/MimeTypeSniffer</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageProjectUrl>https://github.com/cosmos-open/MimeTypeSniffer</PackageProjectUrl>
+		<PackageIconUrl>https://avatars1.githubusercontent.com/u/26578961?s=200</PackageIconUrl>
+		<PackageLicenseUrl>https://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+		<PackageTags>StarrySky;Cosmos;Sniffer;Framework</PackageTags>
+	</PropertyGroup>
+
+</Project>
