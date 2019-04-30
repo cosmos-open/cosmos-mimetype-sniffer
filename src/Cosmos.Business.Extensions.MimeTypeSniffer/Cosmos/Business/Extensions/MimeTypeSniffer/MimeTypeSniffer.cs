@@ -43,8 +43,8 @@ namespace Cosmos.Business.Extensions.MimeTypeSniffer
             return _finder.GetMimeType(extensionName);
         }
 
-        public IMimeSniffer Expect(List<string> expectedResults) => new ExpectMimeTypeSniffer(_innerSniffer, _finder, expectedResults);
+        public IMimeSniffer Expect(List<string> expectedResults) => new ExpectedMimeTypeSniffer(_innerSniffer, _finder, expectedResults);
 
-        public IMimeSniffer Expect(string expectedResult) => new ExpectMimeTypeSniffer(_innerSniffer, _finder, expectedResult);
+        public IMimeSniffer Expect(string expectedResult) => new ExpectedMimeTypeSniffer(_innerSniffer, _finder, expectedResult);
     }
 }

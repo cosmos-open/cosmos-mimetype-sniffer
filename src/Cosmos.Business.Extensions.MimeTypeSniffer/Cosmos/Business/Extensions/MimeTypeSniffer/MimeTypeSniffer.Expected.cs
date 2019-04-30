@@ -7,14 +7,14 @@ using Cosmos.Business.Extensions.MimeTypeSniffer.Core;
 
 namespace Cosmos.Business.Extensions.MimeTypeSniffer
 {
-    public class ExpectMimeTypeSniffer : IMimeSniffer
+    public class ExpectedMimeTypeSniffer : IMimeSniffer
     {
         private readonly IFileTypeSniffer _innerSniffer;
         private readonly List<string> _expectedResults;
         private readonly string _expectedResult;
         private readonly IMimeTypeFinder _finder;
 
-        public ExpectMimeTypeSniffer(IFileTypeSniffer instance, IMimeTypeFinder finder, List<string> expectedResults)
+        public ExpectedMimeTypeSniffer(IFileTypeSniffer instance, IMimeTypeFinder finder, List<string> expectedResults)
         {
             _innerSniffer = instance ?? throw new ArgumentNullException(nameof(instance));
             _expectedResults = expectedResults ?? throw new ArgumentNullException(nameof(expectedResults));
@@ -22,7 +22,7 @@ namespace Cosmos.Business.Extensions.MimeTypeSniffer
             _finder = finder ?? throw new ArgumentNullException(nameof(finder));
         }
 
-        public ExpectMimeTypeSniffer(IFileTypeSniffer instance, IMimeTypeFinder finder, string expectedResult)
+        public ExpectedMimeTypeSniffer(IFileTypeSniffer instance, IMimeTypeFinder finder, string expectedResult)
         {
             _innerSniffer = instance ?? throw new ArgumentNullException(nameof(instance));
             _expectedResults = null;
@@ -54,8 +54,8 @@ namespace Cosmos.Business.Extensions.MimeTypeSniffer
             return _finder.GetMimeType(extensionName);
         }
 
-        public IMimeSniffer Expect(List<string> expectedResults) => new ExpectMimeTypeSniffer(_innerSniffer, _finder, expectedResults);
+        public IMimeSniffer Expect(List<string> expectedResults) => new ExpectedMimeTypeSniffer(_innerSniffer, _finder, expectedResults);
 
-        public IMimeSniffer Expect(string expectedResult) => new ExpectMimeTypeSniffer(_innerSniffer, _finder, expectedResult);
+        public IMimeSniffer Expect(string expectedResult) => new ExpectedMimeTypeSniffer(_innerSniffer, _finder, expectedResult);
     }
 }
