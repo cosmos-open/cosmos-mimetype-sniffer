@@ -11,19 +11,11 @@ for /R "nuget_pub" %%s in (*) do (
 )
 
 ::Core
-dotnet pack src/Cosmos.Business.Extensions.FileTypeSniffer -c Release -o ../../nuget_pub
+dotnet pack src/Cosmos.Business.Extensions.MimeTypeSniffer -c Release -o ../../nuget_pub
 
 ::Extensions for dependency
-dotnet pack src/Cosmos.Business.Extensions.FileTypeSniffer.Extensions.Autofac -c Release -o ../../nuget_pub
-dotnet pack src/Cosmos.Business.Extensions.FileTypeSniffer.Extensions.DependencyInjection -c Release -o ../../nuget_pub
-
-::Extensions for library
-dotnet pack src/Cosmos.Business.Extensions.FileTypeSniffer.Library.Development -c Release -o ../../nuget_pub
-dotnet pack src/Cosmos.Business.Extensions.FileTypeSniffer.Library.Image -c Release -o ../../nuget_pub
-dotnet pack src/Cosmos.Business.Extensions.FileTypeSniffer.Library.Media -c Release -o ../../nuget_pub
-dotnet pack src/Cosmos.Business.Extensions.FileTypeSniffer.Library.Office -c Release -o ../../nuget_pub
-dotnet pack src/Cosmos.Business.Extensions.FileTypeSniffer.Library.Science -c Release -o ../../nuget_pub
-dotnet pack src/Cosmos.Business.Extensions.FileTypeSniffer.Library.Zip -c Release -o ../../nuget_pub
+dotnet pack src/Cosmos.Business.Extensions.MimeTypeSniffer.Extensions.Autofac -c Release -o ../../nuget_pub
+dotnet pack src/Cosmos.Business.Extensions.MimeTypeSniffer.Extensions.DependencyInjection -c Release -o ../../nuget_pub
 
 for /R "nuget_pub" %%s in (*symbols.nupkg) do (
     del %%s
