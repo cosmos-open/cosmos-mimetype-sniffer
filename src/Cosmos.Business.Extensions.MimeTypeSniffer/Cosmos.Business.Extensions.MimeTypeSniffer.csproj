@@ -13,7 +13,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Cosmos.Business.Extensions.FileTypeSniffer" Version="0.1.1" />
+    <PackageReference Include="Cosmos.Business.Extensions.FileTypeSniffer" Version="0.1.2" />
   </ItemGroup>
 
 </Project>
