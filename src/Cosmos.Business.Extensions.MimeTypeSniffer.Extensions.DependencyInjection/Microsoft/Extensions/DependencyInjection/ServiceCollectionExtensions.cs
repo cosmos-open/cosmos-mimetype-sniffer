@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Cosmos.Business.Extensions.FileTypeSniffers;
 using Cosmos.Business.Extensions.MimeTypeSniffer;
 using Cosmos.Business.Extensions.MimeTypeSniffer.Core;
@@ -25,10 +26,18 @@ namespace Microsoft.Extensions.DependencyInjection
             }
 
             IMimeTypeFinder finder = new MimeTypeFinder(library);
-
+            services.AddFileTypeSnifferInternalSafety(options);
             services.AddSingleton<IMimeSniffer>(p => new MimeTypeSniffer(p.GetRequiredService<IFileTypeSniffer>(), finder));
 
             return services;
+        }
+
+        private static void AddFileTypeSnifferInternalSafety(this IServiceCollection services, MsdiMimeTypeSnifferOptions options)
+        {
+            if (services.All(x => x.ServiceType != typeof(IFileTypeSniffer)))
+            {
+                services.AddFileTypeSniffer(options.FileTypeSnifferFallbackOptions);
+            }
         }
     }
 }

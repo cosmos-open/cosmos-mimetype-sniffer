@@ -1,4 +1,6 @@
 ﻿using System;
+using Autofac.Core;
+using Autofac.Core.Registration;
 using Cosmos.Business.Extensions.FileTypeSniffers;
 using Cosmos.Business.Extensions.MimeTypeSniffer;
 using Cosmos.Business.Extensions.MimeTypeSniffer.Core;
@@ -25,10 +27,21 @@ namespace Autofac
             }
 
             IMimeTypeFinder finder = new MimeTypeFinder(library);
-
+            builder.RegisterFileTypeSnifferInternalSafety(options);
             builder.Register(c => new MimeTypeSniffer(c.Resolve<IFileTypeSniffer>(), finder)).As<IMimeSniffer>().SingleInstance();
 
             return builder;
+        }
+
+        private static void RegisterFileTypeSnifferInternalSafety(this ContainerBuilder builder, AutofacMimeTypeSnifferOptions options)
+        {
+            var componentRegistry = new ComponentRegistry();
+            foreach (var item in builder.Properties)
+                componentRegistry.Properties.Add(item);
+            if (!componentRegistry.IsRegistered(new TypedService(typeof(FileTypeSniffer))))
+            {
+                builder.RegisterFileTypeSniffer(options.FileTypeSnifferFallbackOptions);
+            }
         }
     }
 }

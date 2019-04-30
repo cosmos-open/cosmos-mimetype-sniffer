@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Cosmos.Business.Extensions.MimeTypeSniffer.Core;
 
 namespace Autofac
@@ -6,5 +7,7 @@ namespace Autofac
     public class AutofacMimeTypeSnifferOptions : MimeTypeSnifferOptions
     {
         internal IReadOnlyList<IMimeTypeProvider> AdditionalDescriptorProvider => Providers;
+
+        public Action<AutofacFileTypeSnifferOptions> FileTypeSnifferFallbackOptions { get; set; }
     }
 }

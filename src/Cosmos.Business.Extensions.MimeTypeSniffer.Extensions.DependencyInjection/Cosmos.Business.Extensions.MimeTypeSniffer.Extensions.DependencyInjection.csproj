@@ -15,7 +15,7 @@
     <ProjectReference Include="..\Cosmos.Business.Extensions.MimeTypeSniffer\Cosmos.Business.Extensions.MimeTypeSniffer.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Cosmos.Business.Extensions.FileTypeSniffer.Extensions.DependencyInjection" Version="0.1.1" />
+    <PackageReference Include="Cosmos.Business.Extensions.FileTypeSniffer.Extensions.DependencyInjection" Version="0.1.2" />
   </ItemGroup>
 
 </Project>
