@@ -3,21 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Business.Extensions.MimeTypeSniffer", "src\Cosmos.Business.Extensions.MimeTypeSniffer\Cosmos.Business.Extensions.MimeTypeSniffer.csproj", "{A01E7066-F340-468D-8BD3-5679F3CD4A8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.MimeTypeSniffer", "src\Cosmos.Extensions.MimeTypeSniffer\Cosmos.Extensions.MimeTypeSniffer.csproj", "{A01E7066-F340-468D-8BD3-5679F3CD4A8C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AAE2F489-8180-4CFE-B644-44930AEC4943}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "extensions", "extensions", "{DF656902-B479-4A47-A2D8-00D9383A2E71}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Business.Extensions.MimeTypeSniffer.Extensions.DependencyInjection", "src\Cosmos.Business.Extensions.MimeTypeSniffer.Extensions.DependencyInjection\Cosmos.Business.Extensions.MimeTypeSniffer.Extensions.DependencyInjection.csproj", "{324B392A-2308-408E-9936-9EF3AF6A5F61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.MimeTypeSniffer.Extensions.DependencyInjection", "src\Cosmos.Extensions.MimeTypeSniffer.Extensions.DependencyInjection\Cosmos.Extensions.MimeTypeSniffer.Extensions.DependencyInjection.csproj", "{324B392A-2308-408E-9936-9EF3AF6A5F61}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Business.Extensions.MimeTypeSniffer.Extensions.Autofac", "src\Cosmos.Business.Extensions.MimeTypeSniffer.Extensions.Autofac\Cosmos.Business.Extensions.MimeTypeSniffer.Extensions.Autofac.csproj", "{2EFD78B3-7C36-4A3E-91A2-A89594862F97}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{98F577DB-5047-4139-A89D-A45E29BCF516}"
-	ProjectSection(SolutionItems) = preProject
-		build\common.props = build\common.props
-		build\version.props = build\version.props
-	EndProjectSection
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.MimeTypeSniffer.Extensions.Autofac", "src\Cosmos.Extensions.MimeTypeSniffer.Extensions.Autofac\Cosmos.Extensions.MimeTypeSniffer.Extensions.Autofac.csproj", "{2EFD78B3-7C36-4A3E-91A2-A89594862F97}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0591C6F8-D21D-4A3B-8C82-691BF76814BF}"
 EndProject
@@ -30,6 +24,39 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{CC574C55-5A06-432C-B23D-F70EF1864661}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Business.Samples", "samples\Cosmos.Business.Samples\Cosmos.Business.Samples.csproj", "{FF68D180-FD4E-4814-8FAC-226362EBC26F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{DF2D2140-EE42-4584-BF84-D493F1FCCB37}"
+ProjectSection(SolutionItems) = preProject
+	.gitignore = .gitignore
+	common.props = common.props
+	common.tests.props = common.tests.props
+	LICENSE = LICENSE
+	logo.png = logo.png
+	NuGet.config = NuGet.config
+	README.md = README.md
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "asset", "asset", "{2AFB817A-0F39-4802-ADC4-FC5B92BBEE3C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{139AEF13-EFBF-47B2-A23C-936632FDD4F8}"
+ProjectSection(SolutionItems) = preProject
+	build\Publish.bat = build\Publish.bat
+	build\PublishToAlexinea.bat = build\PublishToAlexinea.bat
+	build\PublishToMyGet.bat = build\PublishToMyGet.bat
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{4FABDBA7-1330-4AFA-A7E4-8A7DA98EB5D1}"
+ProjectSection(SolutionItems) = preProject
+	asset\images\icon.back.png = asset\images\icon.back.png
+	asset\images\icon.png = asset\images\icon.png
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "props", "props", "{7FE887D0-E4CD-4316-97D0-F4310E0B3373}"
+ProjectSection(SolutionItems) = preProject
+	asset\props\misc.props = asset\props\misc.props
+	asset\props\package.props = asset\props\package.props
+	asset\props\version.props = asset\props\version.props
+EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -78,6 +105,8 @@ Global
 		{D9AF90D0-A86E-4FC0-B603-199F999BD79E} = {0591C6F8-D21D-4A3B-8C82-691BF76814BF}
 		{2F3AFFB1-2301-44C0-9F3F-C338FB3D2038} = {0591C6F8-D21D-4A3B-8C82-691BF76814BF}
 		{FF68D180-FD4E-4814-8FAC-226362EBC26F} = {CC574C55-5A06-432C-B23D-F70EF1864661}
+		{4FABDBA7-1330-4AFA-A7E4-8A7DA98EB5D1} = {2AFB817A-0F39-4802-ADC4-FC5B92BBEE3C}
+		{7FE887D0-E4CD-4316-97D0-F4310E0B3373} = {2AFB817A-0F39-4802-ADC4-FC5B92BBEE3C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FC15AED8-1EC1-4A49-BD39-C185C6CD4B8E}

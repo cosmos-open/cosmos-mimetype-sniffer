@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cosmos.Extensions.MimeTypeSniffer</name>
+    </assembly>
+    <members>
+        <member name="T:Cosmos.MimeTypeSniffer.Core.OptimizedOrdinalIgnoreCaseComparer">
+            <summary>
+            An optimized version of StringComparer.OrdinalIgnoreCase.
+            </summary>
+            <remarks>
+            An optimized version of <see cref="P:System.StringComparer.OrdinalIgnoreCase">StringComparer.OrdinalIgnoreCase</see>.
+            </remarks>
+        </member>
+        <member name="M:Cosmos.MimeTypeSniffer.Core.OptimizedOrdinalIgnoreCaseComparer.Equals(System.String,System.String)">
+            <summary>
+            Compare the input strings for equality.
+            </summary>
+            <remarks>
+            Compares the input strings for equality.
+            </remarks>
+            <returns><c>true</c>if <paramref name="x"/> and <paramref name="y"/> refer to the same object,
+            or <paramref name="x"/> and <paramref name="y"/> are equal,
+            or <paramref name="x"/> and <paramref name="y"/> are <c>null</c>;
+            otherwise, <c>false</c>.</returns>
+            <param name="x">A string to compare to <paramref name="y"/>.</param>
+            <param name="y">A string to compare to <paramref name="x"/>.</param>
+        </member>
+        <member name="M:Cosmos.MimeTypeSniffer.Core.OptimizedOrdinalIgnoreCaseComparer.GetHashCode(System.String)">
+            <summary>
+            Get the hash code for the specified string.
+            </summary>
+            <remarks>
+            Get the hash code for the specified string.
+            </remarks>
+            <returns>A 32-bit signed hash code calculated from the value of the <paramref name="obj"/> parameter.</returns>
+            <param name="obj">The string.</param>
+            <exception cref="T:System.ArgumentNullException">
+            <paramref name="obj"/> is <c>null</c>.
+            </exception>
+        </member>
+    </members>
+</doc>

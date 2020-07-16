@@ -1,6 +1,6 @@
 using System;
 using System.IO;
-using Cosmos.Business.Extensions.MimeTypeSniffer;
+using Cosmos.MimeTypeSniffer;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 

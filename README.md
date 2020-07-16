@@ -4,7 +4,7 @@ Mime type sniffer component, a library that used to identify the real type of ph
 
 This repository belongs to [Open Cosmos](https://github.com/cosmos-open) Project, a part of [COSMOS LOOPS PROGRAMME](https://github.com/cosmos-loops/).
 
-This project depend on [OPENCOSMOS/FileTypeSniffer](https://github.com/cosmos-open/FileTypeSniffer).
+This project depend on [OPENCOSMOS/FileTypeSniffer](https://github.com/cosmos-open/cosmos-filetype-sniffer).
 
 ---
 
@@ -12,9 +12,9 @@ This project depend on [OPENCOSMOS/FileTypeSniffer](https://github.com/cosmos-op
 
 | Package Name                                                                                                                                                                           | Version                                                                                                           | Downloads                                                                                                          |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| [Cosmos.Business.Extensions.MimeTypeSniffer](https://www.nuget.org/packages/Cosmos.Business.Extensions.MimeTypeSniffer/)                                                               | ![](https://img.shields.io/nuget/v/Cosmos.Business.Extensions.MimeTypeSniffer.svg)                                | ![](https://img.shields.io/nuget/dt/Cosmos.Business.Extensions.MimeTypeSniffer.svg)                                |
-| [Cosmos.Business.Extensions.MimeTypeSniffer.Extensions.DependencyInjection](https://www.nuget.org/packages/Cosmos.Business.Extensions.MimeTypeSniffer.Extensions.DependencyInjection/) | ![](https://img.shields.io/nuget/v/Cosmos.Business.Extensions.MimeTypeSniffer.Extensions.DependencyInjection.svg) | ![](https://img.shields.io/nuget/dt/Cosmos.Business.Extensions.MimeTypeSniffer.Extensions.DependencyInjection.svg) |
-| [Cosmos.Business.Extensions.MimeTypeSniffer.Extensions.Autofac](https://www.nuget.org/packages/Cosmos.Business.Extensions.MimeTypeSniffer.Extensions.Autofac/)                         | ![](https://img.shields.io/nuget/v/Cosmos.Business.Extensions.MimeTypeSniffer.Extensions.Autofac.svg)             | ![](https://img.shields.io/nuget/dt/Cosmos.Business.Extensions.MimeTypeSniffer.Extensions.Autofac.svg)             |
+| [Cosmos.Extensions.MimeTypeSniffer](https://www.nuget.org/packages/Cosmos.Extensions.MimeTypeSniffer/)                                                               | ![](https://img.shields.io/nuget/v/Cosmos.Business.Extensions.MimeTypeSniffer.svg)                                | ![](https://img.shields.io/nuget/dt/Cosmos.Business.Extensions.MimeTypeSniffer.svg)                                |
+| [Cosmos.Extensions.MimeTypeSniffer.Extensions.DependencyInjection](https://www.nuget.org/packages/Cosmos.Extensions.MimeTypeSniffer.Extensions.DependencyInjection/) | ![](https://img.shields.io/nuget/v/Cosmos.Business.Extensions.MimeTypeSniffer.Extensions.DependencyInjection.svg) | ![](https://img.shields.io/nuget/dt/Cosmos.Business.Extensions.MimeTypeSniffer.Extensions.DependencyInjection.svg) |
+| [Cosmos.Extensions.MimeTypeSniffer.Extensions.Autofac](https://www.nuget.org/packages/Cosmos.Extensions.MimeTypeSniffer.Extensions.Autofac/)                         | ![](https://img.shields.io/nuget/v/Cosmos.Business.Extensions.MimeTypeSniffer.Extensions.Autofac.svg)             | ![](https://img.shields.io/nuget/dt/Cosmos.Business.Extensions.MimeTypeSniffer.Extensions.Autofac.svg)             |
 
 ## Usage
 
@@ -23,17 +23,17 @@ This project depend on [OPENCOSMOS/FileTypeSniffer](https://github.com/cosmos-op
 Choose one kind of dependency extensions that you need and install it via nuget.
 
 ```
-Install-Package Cosmos.Business.Extensions.MimeTypeSniffer.Extensions.DependencyInjection
-Install-Package Cosmos.Business.Extensions.MimeTypeSniffer.Extensions.Autofac
+Install-Package Cosmos.Extensions.MimeTypeSniffer.Extensions.DependencyInjection
+Install-Package Cosmos.Extensions.MimeTypeSniffer.Extensions.Autofac
 ```
 
 or use directly
 
 ```
-Install-Package Cosmos.Business.Extensions.MimeTypeSniffer
+Install-Package Cosmos.Extensions.MimeTypeSniffer
 ```
 
-Install the specific file type libraries of [FileTypeSniffer](https://github.com/cosmos-open/FileTypeSniffer#nuget-packages) as needed.
+Install the specific file type libraries of [FileTypeSniffer](https://github.com/cosmos-open/cosmos-filetype-sniffer#nuget-packages) as needed.
 
 ### Config in Startup class
 
@@ -114,7 +114,7 @@ string result2 = _sniffer.MatchSingle(bytes);
 
 ### Available file types
 
-Full list of available file types is [here](https://github.com/cosmos-open/FileTypeSniffer#available-file-types).
+Full list of available file types is [here](https://github.com/cosmos-open/cosmos-filetype-sniffer#available-file-types).
 
 
 ### How to Unit Test

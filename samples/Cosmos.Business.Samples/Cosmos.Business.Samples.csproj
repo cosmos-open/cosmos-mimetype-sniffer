@@ -1,21 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <DebugType>full</DebugType>
   </PropertyGroup>
 
-
   <ItemGroup>
-    <PackageReference Include="Cosmos.Business.Extensions.FileTypeSniffer.Library.Image" Version="0.1.2" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Cosmos.Extensions.FileTypeSniffer.Library.Image" Version="0.1.4.5" />
   </ItemGroup>
 
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Cosmos.Business.Extensions.MimeTypeSniffer.Extensions.DependencyInjection\Cosmos.Business.Extensions.MimeTypeSniffer.Extensions.DependencyInjection.csproj" />
-    <ProjectReference Include="..\..\src\Cosmos.Business.Extensions.MimeTypeSniffer\Cosmos.Business.Extensions.MimeTypeSniffer.csproj" />
+    <ProjectReference Include="..\..\src\Cosmos.Extensions.MimeTypeSniffer.Extensions.DependencyInjection\Cosmos.Extensions.MimeTypeSniffer.Extensions.DependencyInjection.csproj" />
+    <ProjectReference Include="..\..\src\Cosmos.Extensions.MimeTypeSniffer\Cosmos.Extensions.MimeTypeSniffer.csproj" />
   </ItemGroup>
 
 </Project>

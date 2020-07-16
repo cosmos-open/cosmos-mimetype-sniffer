@@ -1,6 +1,5 @@
-using System;
-using Cosmos.Business.Extensions.FileTypeSniffers;
-using Cosmos.Business.Extensions.MimeTypeSniffer;
+using Cosmos.FileTypeSniffers;
+using Cosmos.MimeTypeSniffer;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
-using Cosmos.Business.Extensions.MimeTypeSniffer;
+using Cosmos.MimeTypeSniffer;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 

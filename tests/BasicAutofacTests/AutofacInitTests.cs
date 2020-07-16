@@ -1,7 +1,5 @@
-using System;
 using Autofac;
-using Cosmos.Business.Extensions.FileTypeSniffers;
-using Cosmos.Business.Extensions.MimeTypeSniffer;
+using Cosmos.FileTypeSniffers;
 using Xunit;
 
 namespace BasicAutofacTest
@@ -42,5 +40,9 @@ namespace BasicAutofacTest
                 Assert.NotNull(sniffe2);
             }
         }
+    }
+
+    public interface IMimeSniffer
+    {
     }
 }

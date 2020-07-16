@@ -1,24 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using Cosmos.Business.Extensions.FileTypeSniffers;
-using Cosmos.Business.Extensions.MimeTypeSniffer;
 using Microsoft.AspNetCore.Mvc;
 using Cosmos.Business.Samples.Models;
+using Cosmos.FileTypeSniffers;
+using Cosmos.MimeTypeSniffer;
 using Microsoft.AspNetCore.Hosting;
 
 namespace Cosmos.Business.Samples.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IHostingEnvironment _env;
+        private readonly IWebHostEnvironment _env;
         private readonly IMimeSniffer _sniffer1;
         private readonly IFileTypeSniffer _sniffer2;
 
-        public HomeController(IHostingEnvironment env, IMimeSniffer sniffer1, IFileTypeSniffer sniffer2)
+        public HomeController(IWebHostEnvironment env, IMimeSniffer sniffer1, IFileTypeSniffer sniffer2)
         {
             _env = env;
             _sniffer1 = sniffer1;
