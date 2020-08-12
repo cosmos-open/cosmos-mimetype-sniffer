@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Cosmos.Extensions.FileTypeSniffer.Library.Image" Version="0.1.4.5" />
+    <PackageReference Include="Cosmos.Extensions.FileTypeSniffer.Library.Image" Version="0.1.5-preview2" />
   </ItemGroup>
 
 

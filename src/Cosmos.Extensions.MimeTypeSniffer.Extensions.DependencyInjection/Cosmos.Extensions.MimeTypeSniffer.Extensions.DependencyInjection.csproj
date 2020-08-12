@@ -1,15 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <Import Project="..\..\common.props" />
+  <Import Project="Cosmos.Extensions.MimeTypeSniffer.Extensions.DependencyInjection._shared.props" />
 
-  <PropertyGroup>
-    <AssemblyName>Cosmos.Extensions.MimeTypeSniffer.Extensions.DependencyInjection</AssemblyName>
-    <PackageId>Cosmos.Extensions.MimeTypeSniffer.Extensions.DependencyInjection</PackageId>
-    <Description>DependencyInjection extensions for Cosmos Business mime type sniffer Extensions.</Description>
-  </PropertyGroup>
+    <Import Project="..\..\common.props" />
 
   <ItemGroup>
-    <PackageReference Include="Cosmos.Extensions.FileTypeSniffer.Extensions.DependencyInjection" Version="0.1.4.5" />
+    <PackageReference Include="Cosmos.Extensions.FileTypeSniffer.Extensions.DependencyInjection" Version="$(TargetPkgVersion)" />
   </ItemGroup>
 
   <ItemGroup>

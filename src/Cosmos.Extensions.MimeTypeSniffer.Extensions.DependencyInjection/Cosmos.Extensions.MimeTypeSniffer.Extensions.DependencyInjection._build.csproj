@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="Cosmos.Extensions.MimeTypeSniffer.Extensions.DependencyInjection._shared.props" />
+
+    <Import Project="..\..\common.props" />
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\cosmos-filetype-sniffer\src\Cosmos.Extensions.FileTypeSniffer.Extensions.DependencyInjection\Cosmos.Extensions.FileTypeSniffer.Extensions.DependencyInjection._build.csproj" />
+    <ProjectReference Include="..\Cosmos.Extensions.MimeTypeSniffer\Cosmos.Extensions.MimeTypeSniffer._build.csproj" />
+  </ItemGroup>
+
+</Project>

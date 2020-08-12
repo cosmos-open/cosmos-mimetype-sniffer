@@ -5,7 +5,7 @@
     <Import Project="..\..\common.props" />
 
   <ItemGroup>
-    <PackageReference Include="Cosmos.Extensions.FileTypeSniffer" Version="$(TargetPkgVersion)" />
+    <ProjectReference Include="..\..\..\cosmos-filetype-sniffer\src\Cosmos.Extensions.FileTypeSniffer\Cosmos.Extensions.FileTypeSniffer._build.csproj" />
   </ItemGroup>
 
 </Project>

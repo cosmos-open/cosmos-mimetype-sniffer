@@ -40,9 +40,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "asset", "asset", "{2AFB817A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{139AEF13-EFBF-47B2-A23C-936632FDD4F8}"
 ProjectSection(SolutionItems) = preProject
-	build\Publish.bat = build\Publish.bat
-	build\PublishToAlexinea.bat = build\PublishToAlexinea.bat
-	build\PublishToMyGet.bat = build\PublishToMyGet.bat
+	build\PublishBetaVersion_Script.bat = build\PublishBetaVersion_Script.bat
+	build\PublishNightlyVersion_Script.bat = build\PublishNightlyVersion_Script.bat
+	build\PublishReleaseVersion_Script.bat = build\PublishReleaseVersion_Script.bat
 EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{4FABDBA7-1330-4AFA-A7E4-8A7DA98EB5D1}"
@@ -55,7 +55,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "props", "props", "{7FE887D0
 ProjectSection(SolutionItems) = preProject
 	asset\props\misc.props = asset\props\misc.props
 	asset\props\package.props = asset\props\package.props
-	asset\props\version.props = asset\props\version.props
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution", "solution", "{B009A913-945F-407C-9288-9973C44C1E1D}"
+ProjectSection(SolutionItems) = preProject
+	.gitignore = .gitignore
+	common.props = common.props
+	common.tests.props = common.tests.props
+	LICENSE = LICENSE
+	logo.png = logo.png
+	README.md = README.md
 EndProjectSection
 EndProject
 Global

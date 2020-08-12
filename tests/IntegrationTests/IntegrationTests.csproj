@@ -3,14 +3,14 @@
   <Import Project="..\..\common.tests.props" />
 
   <ItemGroup>
-    <PackageReference Include="Cosmos.Extensions.FileTypeSniffer.Library.Image" Version="0.1.4.5" />
-    <PackageReference Include="Cosmos.Extensions.FileTypeSniffer.Library.Office" Version="0.1.4.5" />
-    <PackageReference Include="Cosmos.Extensions.FileTypeSniffer.Library.Zip" Version="0.1.4.5" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.6.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.0-preview-20200519-01" />
     <PackageReference Include="xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.2" />
+    <PackageReference Include="Cosmos.Extensions.FileTypeSniffer.Library.Image" Version="0.1.5-preview2" />
+    <PackageReference Include="Cosmos.Extensions.FileTypeSniffer.Library.Office" Version="0.1.5-preview2" />
+    <PackageReference Include="Cosmos.Extensions.FileTypeSniffer.Library.Zip" Version="0.1.5-preview2" />
   </ItemGroup>
-
+  
   <ItemGroup>
     <ProjectReference Include="..\..\src\Cosmos.Extensions.MimeTypeSniffer.Extensions.DependencyInjection\Cosmos.Extensions.MimeTypeSniffer.Extensions.DependencyInjection.csproj" />
     <ProjectReference Include="..\..\src\Cosmos.Extensions.MimeTypeSniffer\Cosmos.Extensions.MimeTypeSniffer.csproj" />
