@@ -1,22 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
+using Cosmos.FileTypeSniffers;
+using Cosmos.MimeTypeSniffers.Core;
 
-namespace Cosmos.MimeTypeSniffer.Core
+namespace Cosmos.MimeTypeSniffers
 {
-    public abstract class MimeTypeSnifferOptions
+    public class MimeTypeSnifferOptions
     {
-        protected List<IMimeTypeProvider> Providers { get; set; }
+        private readonly List<IMimeTypeProvider> _providers;
 
-        protected MimeTypeSnifferOptions()
+        internal IReadOnlyList<IMimeTypeProvider> Providers => _providers;
+
+        public MimeTypeSnifferOptions()
         {
-            Providers = new List<IMimeTypeProvider>();
+            _providers = new List<IMimeTypeProvider>();
         }
 
         public void AddProvider<TProvider>(TProvider provider) where TProvider : class, IMimeTypeProvider
         {
             if (provider is null)
                 throw new ArgumentNullException(nameof(provider));
-            Providers.Add(provider);
+            _providers.Add(provider);
         }
 
         public void AddProvider<TProvider>() where TProvider : class, IMimeTypeProvider, new()
@@ -24,5 +28,7 @@ namespace Cosmos.MimeTypeSniffer.Core
             var provider = new TProvider();
             AddProvider(provider);
         }
+
+        public Action<FileTypeSnifferOptions> FileTypeSnifferFallbackOptions { get; set; }
     }
 }

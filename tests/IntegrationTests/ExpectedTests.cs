@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using Cosmos.MimeTypeSniffer;
+using Cosmos.MimeTypeSniffers;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 

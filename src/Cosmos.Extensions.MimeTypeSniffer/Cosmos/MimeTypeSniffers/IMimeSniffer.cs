@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Cosmos.MimeTypeSniffer
+namespace Cosmos.MimeTypeSniffers
 {
     public interface IMimeSniffer
     {

@@ -13,8 +13,8 @@
 
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Cosmos.Extensions.MimeTypeSniffer.Extensions.DependencyInjection\Cosmos.Extensions.MimeTypeSniffer.Extensions.DependencyInjection.csproj" />
     <ProjectReference Include="..\..\src\Cosmos.Extensions.MimeTypeSniffer\Cosmos.Extensions.MimeTypeSniffer.csproj" />
+    <ProjectReference Include="..\..\..\cosmos-dependency\src\Cosmos.Extensions.DependencyInjection\Cosmos.Extensions.DependencyInjection.csproj" />
   </ItemGroup>
 
 </Project>

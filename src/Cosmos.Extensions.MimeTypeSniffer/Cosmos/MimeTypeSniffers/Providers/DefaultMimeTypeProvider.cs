@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
+using Cosmos.MimeTypeSniffers.Core;
 
-namespace Cosmos.MimeTypeSniffer.Core
+namespace Cosmos.MimeTypeSniffers.Providers
 {
     public class DefaultMimeTypeProvider : IMimeTypeProvider
     {
