@@ -5,10 +5,6 @@ VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.MimeTypeSniffer", "src\Cosmos.Extensions.MimeTypeSniffer\Cosmos.Extensions.MimeTypeSniffer._build.csproj", "{A01E7066-F340-468D-8BD3-5679F3CD4A8C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.MimeTypeSniffer.Extensions.DependencyInjection", "src\Cosmos.Extensions.MimeTypeSniffer.Extensions.DependencyInjection\Cosmos.Extensions.MimeTypeSniffer.Extensions.DependencyInjection._build.csproj", "{324B392A-2308-408E-9936-9EF3AF6A5F61}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.MimeTypeSniffer.Extensions.Autofac", "src\Cosmos.Extensions.MimeTypeSniffer.Extensions.Autofac\Cosmos.Extensions.MimeTypeSniffer.Extensions.Autofac._build.csproj", "{2EFD78B3-7C36-4A3E-91A2-A89594862F97}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,14 +15,6 @@ Global
 		{A01E7066-F340-468D-8BD3-5679F3CD4A8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A01E7066-F340-468D-8BD3-5679F3CD4A8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A01E7066-F340-468D-8BD3-5679F3CD4A8C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{324B392A-2308-408E-9936-9EF3AF6A5F61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{324B392A-2308-408E-9936-9EF3AF6A5F61}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{324B392A-2308-408E-9936-9EF3AF6A5F61}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{324B392A-2308-408E-9936-9EF3AF6A5F61}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2EFD78B3-7C36-4A3E-91A2-A89594862F97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2EFD78B3-7C36-4A3E-91A2-A89594862F97}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2EFD78B3-7C36-4A3E-91A2-A89594862F97}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2EFD78B3-7C36-4A3E-91A2-A89594862F97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

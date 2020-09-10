@@ -21,13 +21,28 @@ echo Cleaned up all nuget packages.
 echo.
 
 ::start to package all projects
-
-::core
 dotnet pack src/Cosmos.Extensions.MimeTypeSniffer/Cosmos.Extensions.MimeTypeSniffer._build.csproj                                                               -c Release -o nuget_packages --no-restore
 
-::extensions for dependency
-dotnet pack src/Cosmos.Extensions.MimeTypeSniffer.Extensions.Autofac/Cosmos.Extensions.MimeTypeSniffer.Extensions.Autofac._build.csproj                         -c Release -o nuget_packages --no-restore
-dotnet pack src/Cosmos.Extensions.MimeTypeSniffer.Extensions.DependencyInjection/Cosmos.Extensions.MimeTypeSniffer.Extensions.DependencyInjection._build.csproj -c Release -o nuget_packages --no-restore
+echo =======================================================================
+echo Cosmos.Extensions.MimeTypeSniffer EXTRA
+echo =======================================================================
+
+::start to build, package and push solo/extra projects
+cd extra/AspectCore
+dotnet build MimeTypeSniffer-Extra-AspectCore.sln
+cd ../..
+
+cd extra/Autofac
+dotnet build MimeTypeSniffer-Extra-Autofac.sln
+cd ../..
+
+cd extra/DI
+dotnet build MimeTypeSniffer-Extra-DI.sln
+cd ../..
+
+dotnet pack extra/AspectCore/src/Extra/Extra.csproj    -c Release -o nuget_packages --no-restore
+dotnet pack extra/Autofac/src/Extra/Extra.csproj       -c Release -o nuget_packages --no-restore
+dotnet pack extra/DI/src/Extra/Extra.csproj            -c Release -o nuget_packages --no-restore
 
 for /R "nuget_packages" %%s in (*symbols.nupkg) do (
     del "%%s"
