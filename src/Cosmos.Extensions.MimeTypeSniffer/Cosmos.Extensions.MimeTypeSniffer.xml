@@ -4,7 +4,7 @@
         <name>Cosmos.Extensions.MimeTypeSniffer</name>
     </assembly>
     <members>
-        <member name="T:Cosmos.MimeTypeSniffers.Core.OptimizedOrdinalIgnoreCaseComparer">
+        <member name="T:Cosmos.Sniffers.MimeTypeSniffers.Core.OptimizedOrdinalIgnoreCaseComparer">
             <summary>
             An optimized version of StringComparer.OrdinalIgnoreCase.
             </summary>
@@ -12,7 +12,7 @@
             An optimized version of <see cref="P:System.StringComparer.OrdinalIgnoreCase">StringComparer.OrdinalIgnoreCase</see>.
             </remarks>
         </member>
-        <member name="M:Cosmos.MimeTypeSniffers.Core.OptimizedOrdinalIgnoreCaseComparer.Equals(System.String,System.String)">
+        <member name="M:Cosmos.Sniffers.MimeTypeSniffers.Core.OptimizedOrdinalIgnoreCaseComparer.Equals(System.String,System.String)">
             <summary>
             Compare the input strings for equality.
             </summary>
@@ -26,7 +26,7 @@
             <param name="x">A string to compare to <paramref name="y"/>.</param>
             <param name="y">A string to compare to <paramref name="x"/>.</param>
         </member>
-        <member name="M:Cosmos.MimeTypeSniffers.Core.OptimizedOrdinalIgnoreCaseComparer.GetHashCode(System.String)">
+        <member name="M:Cosmos.Sniffers.MimeTypeSniffers.Core.OptimizedOrdinalIgnoreCaseComparer.GetHashCode(System.String)">
             <summary>
             Get the hash code for the specified string.
             </summary>

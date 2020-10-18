@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 
-namespace Cosmos.MimeTypeSniffers.Core
+namespace Cosmos.Sniffers.MimeTypeSniffers.Core
 {
     /// <summary>
     /// An optimized version of StringComparer.OrdinalIgnoreCase.

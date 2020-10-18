@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Cosmos.MimeTypeSniffers.Core
+namespace Cosmos.Sniffers.MimeTypeSniffers.Core
 {
     public class MimeTypeFinder : IMimeTypeFinder
     {

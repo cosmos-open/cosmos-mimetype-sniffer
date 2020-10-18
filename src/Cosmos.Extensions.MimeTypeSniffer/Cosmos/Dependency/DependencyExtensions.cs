@@ -1,8 +1,8 @@
 ﻿using System;
-using Cosmos.FileTypeSniffers;
-using Cosmos.MimeTypeSniffers;
-using Cosmos.MimeTypeSniffers.Core;
-using Cosmos.MimeTypeSniffers.Providers;
+using Cosmos.Sniffers;
+using Cosmos.Sniffers.MimeTypeSniffers;
+using Cosmos.Sniffers.MimeTypeSniffers.Core;
+using Cosmos.Sniffers.MimeTypeSniffers.Providers;
 
 namespace Cosmos.Dependency
 {

@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+// ReSharper disable InconsistentNaming
+// ReSharper disable InconsistentlySynchronizedField
 
-namespace Cosmos.MimeTypeSniffers.Core
+namespace Cosmos.Sniffers.MimeTypeSniffers.Core
 {
     public class MimeTypeLibrary
     {

@@ -1,4 +1,4 @@
-﻿namespace Cosmos.MimeTypeSniffers.Core
+﻿namespace Cosmos.Sniffers.MimeTypeSniffers.Core
 {
     internal static class StringExtensions
     {

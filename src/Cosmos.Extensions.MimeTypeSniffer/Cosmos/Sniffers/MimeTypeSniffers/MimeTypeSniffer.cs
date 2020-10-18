@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Cosmos.FileTypeSniffers;
-using Cosmos.MimeTypeSniffers.Core;
+using Cosmos.Sniffers.MimeTypeSniffers.Core;
 
-namespace Cosmos.MimeTypeSniffers
+namespace Cosmos.Sniffers.MimeTypeSniffers
 {
     public class MimeTypeSniffer : IMimeSniffer
     {
