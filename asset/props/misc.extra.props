@@ -1,6 +1,0 @@
-<Project>	
-	<ItemGroup>
-		<None Include="..\..\..\..\LICENSE" Pack="true" Visible="false" PackagePath=""/>
-		<None Include="..\..\..\..\asset\images\icon.png" Pack="true" PackagePath=""/>
-	</ItemGroup>
-</Project>

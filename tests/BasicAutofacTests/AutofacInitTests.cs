@@ -1,5 +1,5 @@
 using Autofac;
-using Cosmos.FileTypeSniffers;
+using Cosmos.Sniffers;
 using Xunit;
 
 namespace BasicAutofacTest
@@ -10,8 +10,8 @@ namespace BasicAutofacTest
         public void AutofacTest()
         {
             var builder = new ContainerBuilder();
-            builder.RegisterFileTypeSniffer();
-            builder.RegisterMimeTypeSniffer();
+            builder.RegisterCosmosFileTypeSniffer();
+            builder.RegisterCosmosMimeTypeSniffer();
             var container = builder.Build();
 
             using (var scope = container.BeginLifetimeScope())
@@ -28,7 +28,7 @@ namespace BasicAutofacTest
         public void AutofacTest_Safety()
         {
             var builder = new ContainerBuilder();
-            builder.RegisterMimeTypeSniffer();
+            builder.RegisterCosmosMimeTypeSniffer();
             var container = builder.Build();
 
             using (var scope = container.BeginLifetimeScope())

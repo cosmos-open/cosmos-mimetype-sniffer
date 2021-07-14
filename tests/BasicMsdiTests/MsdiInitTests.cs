@@ -1,5 +1,4 @@
-using Cosmos.FileTypeSniffers;
-using Cosmos.MimeTypeSniffers;
+using Cosmos.Sniffers;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 
@@ -11,8 +10,8 @@ namespace BasicMsdiTests
         public void MsdiTest()
         {
             var services = new ServiceCollection();
-            services.AddFileTypeSniffer();
-            services.AddMimeTypeSniffer();
+            services.AddCosmosFileTypeSniffer();
+            services.AddCosmosMimeTypeSniffer();
             var provider = services.BuildServiceProvider();
 
             using (var scope = provider.CreateScope())
@@ -29,7 +28,7 @@ namespace BasicMsdiTests
         public void MsdiTest_Safety()
         {
             var services = new ServiceCollection();
-            services.AddMimeTypeSniffer();
+            services.AddCosmosMimeTypeSniffer();
             var provider = services.BuildServiceProvider();
 
             using (var scope = provider.CreateScope())

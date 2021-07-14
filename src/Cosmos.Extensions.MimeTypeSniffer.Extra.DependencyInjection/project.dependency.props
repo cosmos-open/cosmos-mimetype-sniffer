@@ -1,0 +1,11 @@
+<Project>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Cosmos.Extensions.MimeTypeSniffer\Cosmos.Extensions.MimeTypeSniffer.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Cosmos.Extensions.DependencyInjection" Version="$(Dependency-PkgVersion)" />
+    </ItemGroup>
+
+</Project>

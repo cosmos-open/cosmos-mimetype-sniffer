@@ -1,15 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
-    <Import Project="..\..\..\common.extra.props" />
+<Project>
 
     <PropertyGroup>
         <AssemblyName>Cosmos.Extensions.MimeTypeSniffer.Extra.DependencyInjection</AssemblyName>
         <PackageId>Cosmos.Extensions.MimeTypeSniffer.Extra.DependencyInjection</PackageId>
         <Description>Extra package for Microsoft DependencyInjection extensions and Cosmos MimeTypeSniffer business extensions.</Description>
     </PropertyGroup>
-
-    <ItemGroup>
-        <PackageReference Include="Cosmos.Extensions.DependencyInjection" Version="$(TargetPkgVersion)" />
-    </ItemGroup>
 
 </Project>
