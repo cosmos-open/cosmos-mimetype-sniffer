@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+
 // ReSharper disable InconsistentNaming
 // ReSharper disable InconsistentlySynchronizedField
 
@@ -8,7 +9,7 @@ namespace Cosmos.Sniffers.MimeTypeSniffers.Core
     public class MimeTypeLibrary
     {
         private readonly Dictionary<string, string> _mimeTypes;
-        private readonly object _lockObj = new object();
+        private readonly object _lockObj = new();
         private readonly IEqualityComparer<string> OrdinalIgnoreCase = new OptimizedOrdinalIgnoreCaseComparer();
 
         public const string DEFAULT_MIME_TYPE = "application/octet-stream";

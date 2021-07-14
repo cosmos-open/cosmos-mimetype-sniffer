@@ -1,11 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <Import Project="Cosmos.Extensions.MimeTypeSniffer._shared.props" />
+    <PropertyGroup>
+        <Configurations>Debug;Release</Configurations>
+        <Platforms>AnyCPU</Platforms>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+
+    <Import Project="project.props" />
 
     <Import Project="..\..\common.props" />
 
-  <ItemGroup>
-    <PackageReference Include="Cosmos.Extensions.FileTypeSniffer" Version="$(TargetPkgVersion)" />
-  </ItemGroup>
+    <Import Project="project.dependency.props" />
 
 </Project>
