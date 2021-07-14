@@ -1,4 +1,4 @@
-# OPENCOSMOS/MimeTypeSniffer
+# COSMOSLOOPS/MimeTypeSniffer
 
 Mime type sniffer component, a library that used to identify the real type of physical file via infering the head of the file binary information, and then returns the MIME type for that/those file extension name(s). 
 
@@ -13,8 +13,9 @@ This project depend on [OPENCOSMOS/FileTypeSniffer](https://github.com/cosmos-op
 | Package Name                                                                                                                                                                           | Version                                                                                                           | Downloads                                                                                                          |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
 | [Cosmos.Extensions.MimeTypeSniffer](https://www.nuget.org/packages/Cosmos.Extensions.MimeTypeSniffer/)                                                               | ![](https://img.shields.io/nuget/v/Cosmos.Extensions.MimeTypeSniffer.svg)                                | ![](https://img.shields.io/nuget/dt/Cosmos.Extensions.MimeTypeSniffer.svg)                                |
-| [Cosmos.Extensions.MimeTypeSniffer.Extensions.DependencyInjection](https://www.nuget.org/packages/Cosmos.Extensions.MimeTypeSniffer.Extensions.DependencyInjection/) | ![](https://img.shields.io/nuget/v/Cosmos.Extensions.MimeTypeSniffer.Extensions.DependencyInjection.svg) | ![](https://img.shields.io/nuget/dt/Cosmos.Extensions.MimeTypeSniffer.Extensions.DependencyInjection.svg) |
-| [Cosmos.Extensions.MimeTypeSniffer.Extensions.Autofac](https://www.nuget.org/packages/Cosmos.Extensions.MimeTypeSniffer.Extensions.Autofac/)                         | ![](https://img.shields.io/nuget/v/Cosmos.Extensions.MimeTypeSniffer.Extensions.Autofac.svg)             | ![](https://img.shields.io/nuget/dt/Cosmos.Extensions.MimeTypeSniffer.Extensions.Autofac.svg)             |
+| [Cosmos.Extensions.MimeTypeSniffer.Extra.DependencyInjection](https://www.nuget.org/packages/Cosmos.Extensions.MimeTypeSniffer.Extra.DependencyInjection/) | ![](https://img.shields.io/nuget/v/Cosmos.Extensions.MimeTypeSniffer.Extra.DependencyInjection.svg) | ![](https://img.shields.io/nuget/dt/Cosmos.Extensions.MimeTypeSniffer.Extra.DependencyInjection.svg) |
+| [Cosmos.Extensions.MimeTypeSniffer.Extra.Autofac](https://www.nuget.org/packages/Cosmos.Extensions.MimeTypeSniffer.Extra.Autofac/)                         | ![](https://img.shields.io/nuget/v/Cosmos.Extensions.MimeTypeSniffer.Extra.Autofac.svg)             | ![](https://img.shields.io/nuget/dt/Cosmos.Extensions.MimeTypeSniffer.Extra.Autofac.svg)             |
+| [Cosmos.Extensions.MimeTypeSniffer.Extra.AspectCoreInjector](https://www.nuget.org/packages/Cosmos.Extensions.MimeTypeSniffer.Extra.AspectCoreInjector/)   | ![](https://img.shields.io/nuget/v/Cosmos.Extensions.MimeTypeSniffer.Extra.AspectCoreInjector.svg)  | ![](https://img.shields.io/nuget/dt/Cosmos.Extensions.MimeTypeSniffer.Extra.AspectCoreInjector.svg)  |
 
 ## Usage
 
@@ -23,8 +24,8 @@ This project depend on [OPENCOSMOS/FileTypeSniffer](https://github.com/cosmos-op
 Choose one kind of dependency extensions that you need and install it via nuget.
 
 ```
-Install-Package Cosmos.Extensions.MimeTypeSniffer.Extensions.DependencyInjection
-Install-Package Cosmos.Extensions.MimeTypeSniffer.Extensions.Autofac
+Install-Package Cosmos.Extensions.MimeTypeSniffer.Extra.DependencyInjection
+Install-Package Cosmos.Extensions.MimeTypeSniffer.Extra.Autofac
 ```
 
 or use directly
@@ -44,9 +45,9 @@ public class Startup
     public void ConfigureServices(IServiceCollection services)
     {
         //configuration
-        services.AddFileTypeSniffer();
-        // since MimeTypeSniffer is depended on  FileTypeSniffer
-        services.AddMimeTypeSniffer();
+        services.AddCosmosFileTypeSniffer();
+        // since MimeTypeSniffer is depended on FileTypeSniffer
+        services.AddCosmosMimeTypeSniffer();
     }
 }
 ```
@@ -60,7 +61,7 @@ public class Startup
     public void ConfigureServices(IServiceCollection services)
     {
         //configuration
-        services.AddMimeTypeSniffer();
+        services.AddCosmosMimeTypeSniffer();
         //It'll register FileTypeSniffer automatically
     }
 }
