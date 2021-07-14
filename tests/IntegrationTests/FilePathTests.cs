@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
-using Cosmos.MimeTypeSniffers;
+using Cosmos.Sniffers;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 
@@ -16,8 +14,8 @@ namespace IntegrationTests
         public FilePathTests()
         {
             var services = new ServiceCollection();
-            services.AddFileTypeSniffer();
-            services.AddMimeTypeSniffer();
+            services.AddCosmosFileTypeSniffer();
+            services.AddCosmosMimeTypeSniffer();
             var provider = services.BuildServiceProvider();
 
             Sniffer = provider.GetRequiredService<IMimeSniffer>();
