@@ -17,49 +17,56 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntegrationTests", "tests\I
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{CC574C55-5A06-432C-B23D-F70EF1864661}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Business.Samples", "samples\Cosmos.Business.Samples\Cosmos.Business.Samples.csproj", "{FF68D180-FD4E-4814-8FAC-226362EBC26F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Business.Samples", "samples\Cosmos.Business.Samples\Cosmos.Business.Samples.csproj", "{FF68D180-FD4E-4814-8FAC-226362EBC26F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{DF2D2140-EE42-4584-BF84-D493F1FCCB37}"
-ProjectSection(SolutionItems) = preProject
-	.gitignore = .gitignore
-	common.props = common.props
-	common.tests.props = common.tests.props
-	LICENSE = LICENSE
-	logo.png = logo.png
-	NuGet.config = NuGet.config
-	README.md = README.md
-EndProjectSection
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "asset", "asset", "{2AFB817A-0F39-4802-ADC4-FC5B92BBEE3C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{139AEF13-EFBF-47B2-A23C-936632FDD4F8}"
 ProjectSection(SolutionItems) = preProject
-	build\PublishBetaVersion_Script.bat = build\PublishBetaVersion_Script.bat
-	build\PublishNightlyVersion_Script.bat = build\PublishNightlyVersion_Script.bat
-	build\PublishReleaseVersion_Script.bat = build\PublishReleaseVersion_Script.bat
+	build\Beta.bat = build\Beta.bat
+	build\Beta_Withoutbuild.bat = build\Beta_Withoutbuild.bat
+	build\Nightly.bat = build\Nightly.bat
+	build\Nightly_Withoutbuild.bat = build\Nightly_Withoutbuild.bat
+	build\Release.bat = build\Release.bat
+	build\Release_Withoutbuild.bat = build\Release_Withoutbuild.bat
 EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{4FABDBA7-1330-4AFA-A7E4-8A7DA98EB5D1}"
-ProjectSection(SolutionItems) = preProject
-	asset\images\icon.back.png = asset\images\icon.back.png
-	asset\images\icon.png = asset\images\icon.png
-EndProjectSection
+	ProjectSection(SolutionItems) = preProject
+		asset\images\icon.back.png = asset\images\icon.back.png
+		asset\images\icon.png = asset\images\icon.png
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "props", "props", "{7FE887D0-E4CD-4316-97D0-F4310E0B3373}"
-ProjectSection(SolutionItems) = preProject
-	asset\props\misc.props = asset\props\misc.props
-	asset\props\package.props = asset\props\package.props
-EndProjectSection
+	ProjectSection(SolutionItems) = preProject
+		asset\props\misc.props = asset\props\misc.props
+		asset\props\package.props = asset\props\package.props
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution", "solution", "{B009A913-945F-407C-9288-9973C44C1E1D}"
-ProjectSection(SolutionItems) = preProject
-	.gitignore = .gitignore
-	common.props = common.props
-	common.tests.props = common.tests.props
-	LICENSE = LICENSE
-	logo.png = logo.png
-	README.md = README.md
-EndProjectSection
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		common.props = common.props
+		common.tests.props = common.tests.props
+		LICENSE = LICENSE
+		logo.png = logo.png
+		README.md = README.md
+		asset\version.dev.props = asset\version.dev.props
+		asset\version.props = asset\version.props
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.MimeTypeSniffer.Extra.AspectCoreInjector", "src\Cosmos.Extensions.MimeTypeSniffer.Extra.AspectCoreInjector\Cosmos.Extensions.MimeTypeSniffer.Extra.AspectCoreInjector.csproj", "{C9A4483C-F740-43AC-A24C-A3958A82A40F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.MimeTypeSniffer.Extra.Autofac", "src\Cosmos.Extensions.MimeTypeSniffer.Extra.Autofac\Cosmos.Extensions.MimeTypeSniffer.Extra.Autofac.csproj", "{11557CC7-0771-4EE7-8328-2CDA253D1FDB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.MimeTypeSniffer.Extra.DependencyInjection", "src\Cosmos.Extensions.MimeTypeSniffer.Extra.DependencyInjection\Cosmos.Extensions.MimeTypeSniffer.Extra.DependencyInjection.csproj", "{F9C480F4-FB17-4225-8818-2B586FDB18F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ex-dependency", "ex-dependency", "{78DC03FB-6776-4CE0-87BE-6EEFB7432A79}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +94,18 @@ Global
 		{FF68D180-FD4E-4814-8FAC-226362EBC26F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF68D180-FD4E-4814-8FAC-226362EBC26F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF68D180-FD4E-4814-8FAC-226362EBC26F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9A4483C-F740-43AC-A24C-A3958A82A40F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9A4483C-F740-43AC-A24C-A3958A82A40F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9A4483C-F740-43AC-A24C-A3958A82A40F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9A4483C-F740-43AC-A24C-A3958A82A40F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11557CC7-0771-4EE7-8328-2CDA253D1FDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11557CC7-0771-4EE7-8328-2CDA253D1FDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11557CC7-0771-4EE7-8328-2CDA253D1FDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11557CC7-0771-4EE7-8328-2CDA253D1FDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9C480F4-FB17-4225-8818-2B586FDB18F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9C480F4-FB17-4225-8818-2B586FDB18F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9C480F4-FB17-4225-8818-2B586FDB18F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9C480F4-FB17-4225-8818-2B586FDB18F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -99,6 +118,10 @@ Global
 		{FF68D180-FD4E-4814-8FAC-226362EBC26F} = {CC574C55-5A06-432C-B23D-F70EF1864661}
 		{4FABDBA7-1330-4AFA-A7E4-8A7DA98EB5D1} = {2AFB817A-0F39-4802-ADC4-FC5B92BBEE3C}
 		{7FE887D0-E4CD-4316-97D0-F4310E0B3373} = {2AFB817A-0F39-4802-ADC4-FC5B92BBEE3C}
+		{78DC03FB-6776-4CE0-87BE-6EEFB7432A79} = {AAE2F489-8180-4CFE-B644-44930AEC4943}
+		{C9A4483C-F740-43AC-A24C-A3958A82A40F} = {78DC03FB-6776-4CE0-87BE-6EEFB7432A79}
+		{11557CC7-0771-4EE7-8328-2CDA253D1FDB} = {78DC03FB-6776-4CE0-87BE-6EEFB7432A79}
+		{F9C480F4-FB17-4225-8818-2B586FDB18F8} = {78DC03FB-6776-4CE0-87BE-6EEFB7432A79}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FC15AED8-1EC1-4A49-BD39-C185C6CD4B8E}

@@ -1,6 +1,6 @@
 <Project>
 	<PropertyGroup Label="Package">
-		<Product>Cosmos.Business</Product>
+		<Product>Cosmos.Sniffers</Product>
 		<Authors>AlexLEWIS;Cosmos</Authors>
 		<RepositoryUrl>https://github.com/cosmos-open/cosmos-mimetype-sniffer</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>

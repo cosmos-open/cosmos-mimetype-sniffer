@@ -1,0 +1,8 @@
+<Project>
+
+    <PropertyGroup>
+        <FileTypeSniffer-PkgVersion>0.1.6.1</FileTypeSniffer-PkgVersion>
+        <Dependency-PkgVersion>0.1.8</Dependency-PkgVersion>
+    </PropertyGroup>
+
+</Project>
