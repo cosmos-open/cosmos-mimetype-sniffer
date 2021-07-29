@@ -1,4 +1,4 @@
-# COSMOSLOOPS/MimeTypeSniffer
+# Cosmos MimeType Sniffer Overview
 
 Mime type sniffer component, a library that used to identify the real type of physical file via infering the head of the file binary information, and then returns the MIME type for that/those file extension name(s). 
 
