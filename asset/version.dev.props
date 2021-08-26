@@ -1,8 +1,8 @@
 <Project>
 
     <PropertyGroup>
-        <FileTypeSniffer-PkgVersion>0.1.9.9</FileTypeSniffer-PkgVersion>
-        <Dependency-PkgVersion>0.1.9.9</Dependency-PkgVersion>
+        <FileTypeSniffer-PkgVersion>0.2.0</FileTypeSniffer-PkgVersion>
+        <Dependency-PkgVersion>0.2.0</Dependency-PkgVersion>
     </PropertyGroup>
 
 </Project>
