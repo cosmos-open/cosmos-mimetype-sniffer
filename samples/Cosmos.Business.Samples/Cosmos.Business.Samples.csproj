@@ -8,12 +8,12 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Cosmos.Extensions.FileTypeSniffer.Library.Image" Version="0.1.9.9" />
-    <PackageReference Include="Cosmos.Extensions.DependencyInjection" Version="0.1.9.9" />
+    <PackageReference Include="CosmosStack.Extensions.FileTypeSniffer.Library.Image" Version="0.1.0" />
+    <PackageReference Include="CosmosStack.Extensions.DependencyInjection" Version="0.1.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Cosmos.Extensions.MimeTypeSniffer\Cosmos.Extensions.MimeTypeSniffer.csproj" />
+    <ProjectReference Include="..\..\src\CosmosStack.Extensions.MimeTypeSniffer\CosmosStack.Extensions.MimeTypeSniffer.csproj" />
   </ItemGroup>
 
 </Project>

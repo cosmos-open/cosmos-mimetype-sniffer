@@ -2,7 +2,7 @@
 using System.IO;
 using Microsoft.AspNetCore.Mvc;
 using Cosmos.Business.Samples.Models;
-using Cosmos.Sniffers;
+using CosmosStack.Sniffers;
 using Microsoft.AspNetCore.Hosting;
 
 namespace Cosmos.Business.Samples.Controllers
