@@ -1,9 +1,0 @@
-<Project>
-
-    <PropertyGroup>
-        <AssemblyName>Cosmos.Extensions.MimeTypeSniffer.Extra.Autofac</AssemblyName>
-        <PackageId>Cosmos.Extensions.MimeTypeSniffer.Extra.Autofac</PackageId>
-        <Description>Extra package for Autofac and Cosmos MimeTypeSniffer business extensions.</Description>
-    </PropertyGroup>
-
-</Project>

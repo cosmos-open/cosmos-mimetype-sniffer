@@ -1,9 +1,0 @@
-<Project>
-
-    <PropertyGroup>
-        <AssemblyName>Cosmos.Extensions.MimeTypeSniffer.Extra.DependencyInjection</AssemblyName>
-        <PackageId>Cosmos.Extensions.MimeTypeSniffer.Extra.DependencyInjection</PackageId>
-        <Description>Extra package for Microsoft DependencyInjection extensions and Cosmos MimeTypeSniffer business extensions.</Description>
-    </PropertyGroup>
-
-</Project>

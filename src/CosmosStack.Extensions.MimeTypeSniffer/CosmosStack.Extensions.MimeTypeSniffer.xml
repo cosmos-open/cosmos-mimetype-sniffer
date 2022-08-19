@@ -1,0 +1,245 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CosmosStack.Extensions.MimeTypeSniffer</name>
+    </assembly>
+    <members>
+        <member name="T:CosmosStack.Dependency.DependencyExtensions">
+            <summary>
+            Dependency Extensions <br />
+            依赖扩展
+            </summary>
+        </member>
+        <member name="M:CosmosStack.Dependency.DependencyExtensions.AddMimeTypeSniffer``1(``0,System.Action{CosmosStack.Sniffers.MimeTypeSniffers.MimeTypeSnifferOptions})">
+            <summary>
+            Add MimeType Sniffer Support
+            </summary>
+            <param name="register"></param>
+            <param name="configure"></param>
+            <typeparam name="TRegister"></typeparam>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="T:CosmosStack.Sniffers.IMimeSniffer">
+            <summary>
+            MimeSniffer Interface <br />
+            MIME 嗅探器接口
+            </summary>
+        </member>
+        <member name="M:CosmosStack.Sniffers.IMimeSniffer.Match(System.Byte[],System.Boolean)">
+            <summary>
+            Match <br />
+            匹配对应的文件类型
+            </summary>
+            <param name="data"></param>
+            <param name="matchAll"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CosmosStack.Sniffers.IMimeSniffer.Match(System.String,System.Int32,System.Boolean)">
+            <summary>
+            Match <br />
+            匹配对应的文件类型
+            </summary>
+            <param name="filePath"></param>
+            <param name="simpleLength"></param>
+            <param name="matchAll"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CosmosStack.Sniffers.IMimeSniffer.MatchSingle(System.Byte[])">
+            <summary>
+            Match Single <br />
+            匹配单个对应的文件类型
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CosmosStack.Sniffers.IMimeSniffer.MatchSingle(System.String,System.Int32)">
+            <summary>
+            Match Single <br />
+            匹配单个对应的文件类型
+            </summary>
+            <param name="filePath"></param>
+            <param name="simpleLength"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CosmosStack.Sniffers.IMimeSniffer.Expect(System.Collections.Generic.List{System.String})">
+            <summary>
+            Expect <br />
+            期待
+            </summary>
+            <param name="expectedResults"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CosmosStack.Sniffers.IMimeSniffer.Expect(System.String)">
+            <summary>
+            Expect <br />
+            期待
+            </summary>
+            <param name="expectedResult"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CosmosStack.Sniffers.MimeTypeSniffers.Core.IMimeTypeFinder">
+            <summary>
+            Mime Type Finder Interface <br />
+            MIME 类型查找器接口
+            </summary>
+        </member>
+        <member name="M:CosmosStack.Sniffers.MimeTypeSniffers.Core.IMimeTypeFinder.GetMimeType(System.String)">
+            <summary>
+            Get MimeType <br />
+            获取 MIME 类型
+            </summary>
+            <param name="extensionName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CosmosStack.Sniffers.MimeTypeSniffers.Core.IMimeTypeFinder.GetMimeTypes(System.Collections.Generic.List{System.String})">
+            <summary>
+            Get a set of MimeType <br />
+            获取一组 MIME 类型
+            </summary>
+            <param name="extensionNames"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CosmosStack.Sniffers.MimeTypeSniffers.Core.IMimeTypeProvider">
+            <summary>
+            MimeType Provider Interface <br />
+            MIME 类型提供者程序接口
+            </summary>
+        </member>
+        <member name="M:CosmosStack.Sniffers.MimeTypeSniffers.Core.IMimeTypeProvider.GetMimeTypes">
+            <summary>
+            Get all MimeType <br />
+            获取所有 MIME 类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CosmosStack.Sniffers.MimeTypeSniffers.Core.MimeTypeFinder">
+            <summary>
+            MimeType Finder <br />
+            默认的 MIME 类型查找器
+            </summary>
+        </member>
+        <member name="M:CosmosStack.Sniffers.MimeTypeSniffers.Core.MimeTypeFinder.GetMimeType(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:CosmosStack.Sniffers.MimeTypeSniffers.Core.MimeTypeFinder.GetMimeTypes(System.Collections.Generic.List{System.String})">
+            <inheritdoc />
+        </member>
+        <member name="T:CosmosStack.Sniffers.MimeTypeSniffers.Core.MimeTypeLibrary">
+            <summary>
+            MimeType Library
+            </summary>
+        </member>
+        <member name="T:CosmosStack.Sniffers.MimeTypeSniffers.Core.OptimizedOrdinalIgnoreCaseComparer">
+            <summary>
+            An optimized version of StringComparer.OrdinalIgnoreCase.
+            </summary>
+            <remarks>
+            An optimized version of <see cref="P:System.StringComparer.OrdinalIgnoreCase">StringComparer.OrdinalIgnoreCase</see>.
+            </remarks>
+        </member>
+        <member name="M:CosmosStack.Sniffers.MimeTypeSniffers.Core.OptimizedOrdinalIgnoreCaseComparer.Equals(System.String,System.String)">
+            <summary>
+            Compare the input strings for equality.
+            </summary>
+            <remarks>
+            Compares the input strings for equality.
+            </remarks>
+            <returns><c>true</c>if <paramref name="x"/> and <paramref name="y"/> refer to the same object,
+            or <paramref name="x"/> and <paramref name="y"/> are equal,
+            or <paramref name="x"/> and <paramref name="y"/> are <c>null</c>;
+            otherwise, <c>false</c>.</returns>
+            <param name="x">A string to compare to <paramref name="y"/>.</param>
+            <param name="y">A string to compare to <paramref name="x"/>.</param>
+        </member>
+        <member name="M:CosmosStack.Sniffers.MimeTypeSniffers.Core.OptimizedOrdinalIgnoreCaseComparer.GetHashCode(System.String)">
+            <summary>
+            Get the hash code for the specified string.
+            </summary>
+            <remarks>
+            Get the hash code for the specified string.
+            </remarks>
+            <returns>A 32-bit signed hash code calculated from the value of the <paramref name="obj"/> parameter.</returns>
+            <param name="obj">The string.</param>
+            <exception cref="T:System.ArgumentNullException">
+            <paramref name="obj"/> is <c>null</c>.
+            </exception>
+        </member>
+        <member name="T:CosmosStack.Sniffers.MimeTypeSniffers.MimeTypeSniffer">
+            <summary>
+            MimeType Sniffer <br />
+            MIME 类型嗅探器
+            </summary>
+        </member>
+        <member name="M:CosmosStack.Sniffers.MimeTypeSniffers.MimeTypeSniffer.Match(System.Byte[],System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:CosmosStack.Sniffers.MimeTypeSniffers.MimeTypeSniffer.Match(System.String,System.Int32,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:CosmosStack.Sniffers.MimeTypeSniffers.MimeTypeSniffer.MatchSingle(System.Byte[])">
+            <inheritdoc />
+        </member>
+        <member name="M:CosmosStack.Sniffers.MimeTypeSniffers.MimeTypeSniffer.MatchSingle(System.String,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:CosmosStack.Sniffers.MimeTypeSniffers.MimeTypeSniffer.Expect(System.Collections.Generic.List{System.String})">
+            <inheritdoc />
+        </member>
+        <member name="M:CosmosStack.Sniffers.MimeTypeSniffers.MimeTypeSniffer.Expect(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:CosmosStack.Sniffers.MimeTypeSniffers.ExpectedMimeTypeSniffer">
+            <summary>
+            Expected Mime Type Sniffer <br />
+            具有期待值的 MIME 类型嗅探器
+            </summary>
+        </member>
+        <member name="M:CosmosStack.Sniffers.MimeTypeSniffers.ExpectedMimeTypeSniffer.Match(System.Byte[],System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:CosmosStack.Sniffers.MimeTypeSniffers.ExpectedMimeTypeSniffer.Match(System.String,System.Int32,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:CosmosStack.Sniffers.MimeTypeSniffers.ExpectedMimeTypeSniffer.MatchSingle(System.Byte[])">
+            <inheritdoc />
+        </member>
+        <member name="M:CosmosStack.Sniffers.MimeTypeSniffers.ExpectedMimeTypeSniffer.MatchSingle(System.String,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:CosmosStack.Sniffers.MimeTypeSniffers.ExpectedMimeTypeSniffer.Expect(System.Collections.Generic.List{System.String})">
+            <inheritdoc />
+        </member>
+        <member name="M:CosmosStack.Sniffers.MimeTypeSniffers.ExpectedMimeTypeSniffer.Expect(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:CosmosStack.Sniffers.MimeTypeSniffers.MimeTypeSnifferOptions">
+            <summary>
+            MimeType Sniffer Options <br />
+            MIME 类型嗅探器选项
+            </summary>
+        </member>
+        <member name="M:CosmosStack.Sniffers.MimeTypeSniffers.MimeTypeSnifferOptions.AddProvider``1(``0)">
+            <summary>
+            Add Provider <br />
+            添加提供者程序
+            </summary>
+            <param name="provider"></param>
+            <typeparam name="TProvider"></typeparam>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:CosmosStack.Sniffers.MimeTypeSniffers.MimeTypeSnifferOptions.AddProvider``1">
+            <summary>
+            Add Provider <br />
+            添加提供者程序
+            </summary>
+            <typeparam name="TProvider"></typeparam>
+        </member>
+        <member name="T:CosmosStack.Sniffers.MimeTypeSniffers.Providers.DefaultMimeTypeProvider">
+            <summary>
+            Default Mime Type Provider <br />
+            默认的 MIME 类型提供者程序
+            </summary>
+        </member>
+    </members>
+</doc>

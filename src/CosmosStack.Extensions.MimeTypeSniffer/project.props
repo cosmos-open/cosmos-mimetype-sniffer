@@ -1,0 +1,9 @@
+<Project>
+
+  <PropertyGroup>
+    <AssemblyName>CosmosStack.Extensions.MimeTypeSniffer</AssemblyName>
+    <PackageId>CosmosStack.Extensions.MimeTypeSniffer</PackageId>
+    <Description>Mine type sniffer for Cosmos Business Extensions.</Description>
+  </PropertyGroup>
+
+</Project>

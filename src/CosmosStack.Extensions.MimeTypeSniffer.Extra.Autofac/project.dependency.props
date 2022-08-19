@@ -1,0 +1,11 @@
+<Project>
+
+    <ItemGroup>
+        <ProjectReference Include="..\CosmosStack.Extensions.MimeTypeSniffer\CosmosStack.Extensions.MimeTypeSniffer.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="CosmosStack.Extensions.Autofac" Version="$(Dependency-RefVersion)" />
+    </ItemGroup>
+
+</Project>

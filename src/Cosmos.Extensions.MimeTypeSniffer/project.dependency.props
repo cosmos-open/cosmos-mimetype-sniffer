@@ -1,7 +1,0 @@
-<Project>
-
-  <ItemGroup>
-    <PackageReference Include="Cosmos.Extensions.FileTypeSniffer" Version="$(FileTypeSniffer-PkgVersion)" />
-  </ItemGroup>
-
-</Project>
