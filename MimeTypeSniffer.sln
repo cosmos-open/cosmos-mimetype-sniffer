@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.MimeTypeSniffer", "src\Cosmos.Extensions.MimeTypeSniffer\Cosmos.Extensions.MimeTypeSniffer.csproj", "{A01E7066-F340-468D-8BD3-5679F3CD4A8C}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AAE2F489-8180-4CFE-B644-44930AEC4943}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0591C6F8-D21D-4A3B-8C82-691BF76814BF}"
@@ -25,16 +23,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{DF2D2140-E
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "asset", "asset", "{2AFB817A-0F39-4802-ADC4-FC5B92BBEE3C}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{139AEF13-EFBF-47B2-A23C-936632FDD4F8}"
-ProjectSection(SolutionItems) = preProject
-	build\Beta.bat = build\Beta.bat
-	build\Beta_Withoutbuild.bat = build\Beta_Withoutbuild.bat
-	build\Nightly.bat = build\Nightly.bat
-	build\Nightly_Withoutbuild.bat = build\Nightly_Withoutbuild.bat
-	build\Release.bat = build\Release.bat
-	build\Release_Withoutbuild.bat = build\Release_Withoutbuild.bat
-EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{4FABDBA7-1330-4AFA-A7E4-8A7DA98EB5D1}"
 	ProjectSection(SolutionItems) = preProject
@@ -60,13 +48,26 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution", "solution", "{B0
 		asset\version.props = asset\version.props
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.MimeTypeSniffer.Extra.AspectCoreInjector", "src\Cosmos.Extensions.MimeTypeSniffer.Extra.AspectCoreInjector\Cosmos.Extensions.MimeTypeSniffer.Extra.AspectCoreInjector.csproj", "{C9A4483C-F740-43AC-A24C-A3958A82A40F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CosmosStack.Extensions.MimeTypeSniffer.Extra.AspectCoreInjector", "src\CosmosStack.Extensions.MimeTypeSniffer.Extra.AspectCoreInjector\CosmosStack.Extensions.MimeTypeSniffer.Extra.AspectCoreInjector.csproj", "{C9A4483C-F740-43AC-A24C-A3958A82A40F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.MimeTypeSniffer.Extra.Autofac", "src\Cosmos.Extensions.MimeTypeSniffer.Extra.Autofac\Cosmos.Extensions.MimeTypeSniffer.Extra.Autofac.csproj", "{11557CC7-0771-4EE7-8328-2CDA253D1FDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CosmosStack.Extensions.MimeTypeSniffer.Extra.Autofac", "src\CosmosStack.Extensions.MimeTypeSniffer.Extra.Autofac\CosmosStack.Extensions.MimeTypeSniffer.Extra.Autofac.csproj", "{11557CC7-0771-4EE7-8328-2CDA253D1FDB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.MimeTypeSniffer.Extra.DependencyInjection", "src\Cosmos.Extensions.MimeTypeSniffer.Extra.DependencyInjection\Cosmos.Extensions.MimeTypeSniffer.Extra.DependencyInjection.csproj", "{F9C480F4-FB17-4225-8818-2B586FDB18F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CosmosStack.Extensions.MimeTypeSniffer.Extra.DependencyInjection", "src\CosmosStack.Extensions.MimeTypeSniffer.Extra.DependencyInjection\CosmosStack.Extensions.MimeTypeSniffer.Extra.DependencyInjection.csproj", "{F9C480F4-FB17-4225-8818-2B586FDB18F8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ex-dependency", "ex-dependency", "{78DC03FB-6776-4CE0-87BE-6EEFB7432A79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosStack.Extensions.MimeTypeSniffer", "src\CosmosStack.Extensions.MimeTypeSniffer\CosmosStack.Extensions.MimeTypeSniffer.csproj", "{204B3223-74BD-4EC1-8FEF-D8EF50F45CAF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{9E027A54-C824-47CD-93B1-E7B65C3A26A4}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\Beta.bat = scripts\Beta.bat
+		scripts\Beta_Withoutbuild.bat = scripts\Beta_Withoutbuild.bat
+		scripts\Nightly.bat = scripts\Nightly.bat
+		scripts\Nightly_Withoutbuild.bat = scripts\Nightly_Withoutbuild.bat
+		scripts\Release.bat = scripts\Release.bat
+		scripts\Release_Withoutbuild.bat = scripts\Release_Withoutbuild.bat
+		scripts\BuildOnly.bat = scripts\BuildOnly.bat
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -74,10 +75,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A01E7066-F340-468D-8BD3-5679F3CD4A8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A01E7066-F340-468D-8BD3-5679F3CD4A8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A01E7066-F340-468D-8BD3-5679F3CD4A8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A01E7066-F340-468D-8BD3-5679F3CD4A8C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4BD87E70-BF6B-4F1F-8146-CDF246B381E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4BD87E70-BF6B-4F1F-8146-CDF246B381E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BD87E70-BF6B-4F1F-8146-CDF246B381E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -106,12 +103,15 @@ Global
 		{F9C480F4-FB17-4225-8818-2B586FDB18F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9C480F4-FB17-4225-8818-2B586FDB18F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9C480F4-FB17-4225-8818-2B586FDB18F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{204B3223-74BD-4EC1-8FEF-D8EF50F45CAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{204B3223-74BD-4EC1-8FEF-D8EF50F45CAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{204B3223-74BD-4EC1-8FEF-D8EF50F45CAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{204B3223-74BD-4EC1-8FEF-D8EF50F45CAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{A01E7066-F340-468D-8BD3-5679F3CD4A8C} = {AAE2F489-8180-4CFE-B644-44930AEC4943}
 		{4BD87E70-BF6B-4F1F-8146-CDF246B381E9} = {0591C6F8-D21D-4A3B-8C82-691BF76814BF}
 		{D9AF90D0-A86E-4FC0-B603-199F999BD79E} = {0591C6F8-D21D-4A3B-8C82-691BF76814BF}
 		{2F3AFFB1-2301-44C0-9F3F-C338FB3D2038} = {0591C6F8-D21D-4A3B-8C82-691BF76814BF}
@@ -122,6 +122,7 @@ Global
 		{C9A4483C-F740-43AC-A24C-A3958A82A40F} = {78DC03FB-6776-4CE0-87BE-6EEFB7432A79}
 		{11557CC7-0771-4EE7-8328-2CDA253D1FDB} = {78DC03FB-6776-4CE0-87BE-6EEFB7432A79}
 		{F9C480F4-FB17-4225-8818-2B586FDB18F8} = {78DC03FB-6776-4CE0-87BE-6EEFB7432A79}
+		{204B3223-74BD-4EC1-8FEF-D8EF50F45CAF} = {AAE2F489-8180-4CFE-B644-44930AEC4943}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FC15AED8-1EC1-4A49-BD39-C185C6CD4B8E}
