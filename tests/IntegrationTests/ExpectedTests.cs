@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Cosmos.Sniffers;
+using CosmosStack.Sniffers;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 
+// ReSharper disable once CheckNamespace
 namespace IntegrationTests
 {
     public class ExpectedTests

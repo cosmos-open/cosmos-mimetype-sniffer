@@ -1,9 +1,10 @@
 ﻿using System;
 using System.IO;
-using Cosmos.Sniffers;
+using CosmosStack.Sniffers;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 
+// ReSharper disable once CheckNamespace
 namespace IntegrationTests
 {
     public class FilePathTests

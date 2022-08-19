@@ -1,7 +1,8 @@
-using Cosmos.Sniffers;
+using CosmosStack.Sniffers;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 
+// ReSharper disable once CheckNamespace
 namespace BasicMsdiTests
 {
     public class MsdiInitTests
