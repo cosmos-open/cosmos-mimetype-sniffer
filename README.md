@@ -1,8 +1,8 @@
-# Cosmos MimeType Sniffer Overview
+# CosmosStack MimeType Sniffer Overview
 
-Mime type sniffer component, a library that used to identify the real type of physical file via infering the head of the file binary information, and then returns the MIME type for that/those file extension name(s). 
+Mime type sniffer component, a library that used to identify the real type of physical file via inferring the head of the file binary information, and then returns the MIME type for that/those file extension name(s). 
 
-This repository belongs to [Open Cosmos](https://github.com/cosmos-open) Project, a part of [COSMOS LOOPS PROGRAMME](https://github.com/cosmos-loops/).
+This repository belongs to [Open Cosmos](https://github.com/cosmos-open) Project, a part of [Cosmos Stack](https://github.com/cosmos-stack/).
 
 This project depend on [OPENCOSMOS/FileTypeSniffer](https://github.com/cosmos-open/cosmos-filetype-sniffer).
 
@@ -12,10 +12,10 @@ This project depend on [OPENCOSMOS/FileTypeSniffer](https://github.com/cosmos-op
 
 | Package Name                                                                                                                                                                           | Version                                                                                                           | Downloads                                                                                                          |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| [Cosmos.Extensions.MimeTypeSniffer](https://www.nuget.org/packages/Cosmos.Extensions.MimeTypeSniffer/)                                                               | ![](https://img.shields.io/nuget/v/Cosmos.Extensions.MimeTypeSniffer.svg)                                | ![](https://img.shields.io/nuget/dt/Cosmos.Extensions.MimeTypeSniffer.svg)                                |
-| [Cosmos.Extensions.MimeTypeSniffer.Extra.DependencyInjection](https://www.nuget.org/packages/Cosmos.Extensions.MimeTypeSniffer.Extra.DependencyInjection/) | ![](https://img.shields.io/nuget/v/Cosmos.Extensions.MimeTypeSniffer.Extra.DependencyInjection.svg) | ![](https://img.shields.io/nuget/dt/Cosmos.Extensions.MimeTypeSniffer.Extra.DependencyInjection.svg) |
-| [Cosmos.Extensions.MimeTypeSniffer.Extra.Autofac](https://www.nuget.org/packages/Cosmos.Extensions.MimeTypeSniffer.Extra.Autofac/)                         | ![](https://img.shields.io/nuget/v/Cosmos.Extensions.MimeTypeSniffer.Extra.Autofac.svg)             | ![](https://img.shields.io/nuget/dt/Cosmos.Extensions.MimeTypeSniffer.Extra.Autofac.svg)             |
-| [Cosmos.Extensions.MimeTypeSniffer.Extra.AspectCoreInjector](https://www.nuget.org/packages/Cosmos.Extensions.MimeTypeSniffer.Extra.AspectCoreInjector/)   | ![](https://img.shields.io/nuget/v/Cosmos.Extensions.MimeTypeSniffer.Extra.AspectCoreInjector.svg)  | ![](https://img.shields.io/nuget/dt/Cosmos.Extensions.MimeTypeSniffer.Extra.AspectCoreInjector.svg)  |
+| [CosmosStack.Extensions.MimeTypeSniffer](https://www.nuget.org/packages/CosmosStack.Extensions.MimeTypeSniffer/)                                                               | ![](https://img.shields.io/nuget/v/CosmosStack.Extensions.MimeTypeSniffer.svg)                                | ![](https://img.shields.io/nuget/dt/CosmosStack.Extensions.MimeTypeSniffer.svg)                                |
+| [CosmosStack.Extensions.MimeTypeSniffer.Extra.DependencyInjection](https://www.nuget.org/packages/CosmosStack.Extensions.MimeTypeSniffer.Extra.DependencyInjection/) | ![](https://img.shields.io/nuget/v/CosmosStack.Extensions.MimeTypeSniffer.Extra.DependencyInjection.svg) | ![](https://img.shields.io/nuget/dt/CosmosStack.Extensions.MimeTypeSniffer.Extra.DependencyInjection.svg) |
+| [CosmosStack.Extensions.MimeTypeSniffer.Extra.Autofac](https://www.nuget.org/packages/CosmosStack.Extensions.MimeTypeSniffer.Extra.Autofac/)                         | ![](https://img.shields.io/nuget/v/CosmosStack.Extensions.MimeTypeSniffer.Extra.Autofac.svg)             | ![](https://img.shields.io/nuget/dt/CosmosStack.Extensions.MimeTypeSniffer.Extra.Autofac.svg)             |
+| [CosmosStack.Extensions.MimeTypeSniffer.Extra.AspectCoreInjector](https://www.nuget.org/packages/CosmosStack.Extensions.MimeTypeSniffer.Extra.AspectCoreInjector/)   | ![](https://img.shields.io/nuget/v/CosmosStack.Extensions.MimeTypeSniffer.Extra.AspectCoreInjector.svg)  | ![](https://img.shields.io/nuget/dt/CosmosStack.Extensions.MimeTypeSniffer.Extra.AspectCoreInjector.svg)  |
 
 ## Usage
 
@@ -24,14 +24,14 @@ This project depend on [OPENCOSMOS/FileTypeSniffer](https://github.com/cosmos-op
 Choose one kind of dependency extensions that you need and install it via nuget.
 
 ```
-Install-Package Cosmos.Extensions.MimeTypeSniffer.Extra.DependencyInjection
-Install-Package Cosmos.Extensions.MimeTypeSniffer.Extra.Autofac
+Install-Package CosmosStack.Extensions.MimeTypeSniffer.Extra.DependencyInjection
+Install-Package CosmosStack.Extensions.MimeTypeSniffer.Extra.Autofac
 ```
 
 or use directly
 
 ```
-Install-Package Cosmos.Extensions.MimeTypeSniffer
+Install-Package CosmosStack.Extensions.MimeTypeSniffer
 ```
 
 Install the specific file type libraries of [FileTypeSniffer](https://github.com/cosmos-open/cosmos-filetype-sniffer#nuget-packages) as needed.
@@ -126,7 +126,7 @@ Copy the `tests\samples` directory under the tests folder to `tests\IntegrationT
 
 ## Thanks
 
-People or projects that have made a great contribbution to this project:
+People or projects that have made a great contribution to this project:
 
 - _null_
 - _The next one must be you_
@@ -139,6 +139,6 @@ People or projects that have made a great contribbution to this project:
 
 ## License
 
-Member project of [COSMOS LOOPS PROGRAMME](https://github.com/cosmos-loops).
+Member project of [Cosmos Stack](https://github.com/cosmos-stack~~~~).
 
 [Apache 2.0 License](/LICENSE)
