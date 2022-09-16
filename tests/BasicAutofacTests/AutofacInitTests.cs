@@ -1,47 +1,46 @@
 using Autofac;
-using CosmosStack.Sniffers;
+using Cosmos.Sniffers;
 using Xunit;
 
 // ReSharper disable once CheckNamespace
-namespace BasicAutofacTest
+namespace BasicAutofacTest;
+
+public class AutofacInitTests
 {
-    public class AutofacInitTests
+    [Fact]
+    public void AutofacTest()
     {
-        [Fact]
-        public void AutofacTest()
+        var builder = new ContainerBuilder();
+        builder.RegisterFileTypeSniffer();
+        builder.RegisterCosmosMimeTypeSniffer();
+        var container = builder.Build();
+
+        using (var scope = container.BeginLifetimeScope())
         {
-            var builder = new ContainerBuilder();
-            builder.RegisterCosmosFileTypeSniffer();
-            builder.RegisterCosmosMimeTypeSniffer();
-            var container = builder.Build();
+            var sniffer = scope.Resolve<IMimeSniffer>();
+            var sniffe2 = scope.Resolve<IFileTypeSniffer>();
 
-            using (var scope = container.BeginLifetimeScope())
-            {
-                var sniffer = scope.Resolve<IMimeSniffer>();
-                var sniffe2 = scope.Resolve<IFileTypeSniffer>();
-
-                Assert.NotNull(sniffer);
-                Assert.NotNull(sniffe2);
-            }
-        }
-
-        [Fact]
-        public void AutofacTest_Safety()
-        {
-            var builder = new ContainerBuilder();
-            builder.RegisterCosmosMimeTypeSniffer();
-            var container = builder.Build();
-
-            using (var scope = container.BeginLifetimeScope())
-            {
-                var sniffer = scope.Resolve<IMimeSniffer>();
-                var sniffe2 = scope.Resolve<IFileTypeSniffer>();
-
-                Assert.NotNull(sniffer);
-                Assert.NotNull(sniffe2);
-            }
+            Assert.NotNull(sniffer);
+            Assert.NotNull(sniffe2);
         }
     }
 
-    public interface IMimeSniffer { }
+    [Fact]
+    public void AutofacTest_Safety()
+    {
+        var builder = new ContainerBuilder();
+        builder.RegisterCosmosMimeTypeSniffer();
+        var container = builder.Build();
+
+        using (var scope = container.BeginLifetimeScope())
+        {
+            var sniffer = scope.Resolve<IMimeSniffer>();
+            var sniffe2 = scope.Resolve<IFileTypeSniffer>();
+
+            Assert.NotNull(sniffer);
+            Assert.NotNull(sniffe2);
+        }
+    }
 }
+
+public interface IMimeSniffer { }

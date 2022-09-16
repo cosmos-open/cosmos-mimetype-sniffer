@@ -4,14 +4,14 @@
   
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
-    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit" Version="2.4.2" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3" />
-    <PackageReference Include="CosmosStack.Extensions.FileTypeSniffer.Extra.Autofac" Version="0.1.0" />
+    <PackageReference Include="CosmosStack.Extensions.FileTypeSniffer.DependOn.Autofac" Version="0.4.7.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\CosmosStack.Extensions.MimeTypeSniffer\CosmosStack.Extensions.MimeTypeSniffer.csproj" />
-    <ProjectReference Include="..\..\src\CosmosStack.Extensions.MimeTypeSniffer.Extra.Autofac\CosmosStack.Extensions.MimeTypeSniffer.Extra.Autofac.csproj" />
+    <ProjectReference Include="..\..\src\Cosmos.MimeTypeSniffer\Cosmos.MimeTypeSniffer.csproj" />
+    <ProjectReference Include="..\..\src\Cosmos.MimeTypeSniffer.DependOn.Autofac\Cosmos.MimeTypeSniffer.DependOn.Autofac.csproj" />
   </ItemGroup>
 
 </Project>
