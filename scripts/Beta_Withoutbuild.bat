@@ -1,7 +1,7 @@
 @echo off
 
 echo =======================================================================
-echo CosmosStack.MimeTypeSniffer (Without Build)
+echo Cosmos.MimeTypeSniffer (Without Build)
 echo =======================================================================
 
 ::go to parent folder
