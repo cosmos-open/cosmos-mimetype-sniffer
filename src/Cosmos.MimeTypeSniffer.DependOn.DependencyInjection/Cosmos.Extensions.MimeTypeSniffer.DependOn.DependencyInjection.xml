@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cosmos.Extensions.MimeTypeSniffer.DependOn.DependencyInjection</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Extensions.DependencyInjection.DependencyExtensions">
+            <summary>
+            Dependency Extensions <br />
+            依赖扩展
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.DependencyExtensions.AddCosmosMimeTypeSniffer(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Cosmos.Sniffers.MimeTypeSniffers.MimeTypeSnifferOptions})">
+            <summary>
+            Add Cosmos Stack Mime Type Sniffer Support.
+            </summary>
+            <param name="services"></param>
+            <param name="configure"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

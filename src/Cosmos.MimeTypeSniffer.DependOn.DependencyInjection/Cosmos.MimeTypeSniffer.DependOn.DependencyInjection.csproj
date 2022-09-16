@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Configurations>Debug;Release</Configurations>
+        <Platforms>AnyCPU</Platforms>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <AssemblyName>Cosmos.Extensions.MimeTypeSniffer.DependOn.DependencyInjection</AssemblyName>
+        <PackageId>CosmosStack.Extensions.MimeTypeSniffer.DependOn.DependencyInjection</PackageId>
+        <Description>Extra package for Microsoft DependencyInjection extensions and Cosmos MimeTypeSniffer business extensions.</Description>
+    </PropertyGroup>
+
+    <Import Project="..\..\common.props" />
+
+    <Import Project="dependency.props" />
+
+    <Import Project="references.props" />
+
+</Project>

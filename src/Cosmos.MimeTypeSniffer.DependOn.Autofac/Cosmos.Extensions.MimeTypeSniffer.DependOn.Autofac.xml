@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cosmos.Extensions.MimeTypeSniffer.DependOn.Autofac</name>
+    </assembly>
+    <members>
+        <member name="T:Autofac.DependencyExtensions">
+            <summary>
+            Dependency Extensions <br />
+            依赖扩展
+            </summary>
+        </member>
+        <member name="M:Autofac.DependencyExtensions.RegisterCosmosMimeTypeSniffer(Autofac.ContainerBuilder,System.Action{Cosmos.Sniffers.MimeTypeSniffers.MimeTypeSnifferOptions})">
+            <summary>
+            Add Cosmos Stack Mime Type Sniffer Support.
+            </summary>
+            <param name="builder"></param>
+            <param name="configure"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

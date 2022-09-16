@@ -1,0 +1,7 @@
+<Project>
+
+    <ItemGroup>
+        <PackageReference Include="CosmosStack.Extensions.DependencyInjection" Version="$(Dependency-RefVersion)" />
+    </ItemGroup>
+
+</Project>

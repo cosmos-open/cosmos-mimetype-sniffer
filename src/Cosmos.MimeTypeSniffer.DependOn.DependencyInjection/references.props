@@ -1,0 +1,7 @@
+<Project>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cosmos.MimeTypeSniffer\Cosmos.MimeTypeSniffer.csproj" />
+  </ItemGroup>
+
+</Project>
