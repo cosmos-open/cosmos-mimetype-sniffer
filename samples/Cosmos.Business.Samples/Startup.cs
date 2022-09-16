@@ -1,4 +1,4 @@
-﻿using CosmosStack.Dependency;
+﻿using Cosmos.Dependency;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -30,7 +30,7 @@ namespace Cosmos.Business.Samples
 
             using (var register = new MicrosoftProxyRegister(services))
             {
-                register.AddMimeTypeSniffer();
+                register.RegisterMimeTypeSniffer();
             }
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
