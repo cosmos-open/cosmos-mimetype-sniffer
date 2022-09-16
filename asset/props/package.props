@@ -1,12 +1,18 @@
 <Project>
-	<PropertyGroup Label="Package">
-		<Product>CosmosStack.Sniffers</Product>
-		<Authors>AlexLEWIS;CosmosStack</Authors>
-		<RepositoryUrl>https://github.com/cosmos-open/cosmos-mimetype-sniffer</RepositoryUrl>
-		<RepositoryType>git</RepositoryType>
-		<PackageProjectUrl>https://github.com/cosmos-open/cosmos-mimetype-sniffer</PackageProjectUrl>
-		<PackageIcon>icon.png</PackageIcon>
-		<PackageLicenseFile>LICENSE</PackageLicenseFile>
-		<PackageTags>CosmosStack;CosmosComponents;Sniffer;Framework</PackageTags>
-	</PropertyGroup>
+    <PropertyGroup Label="Package">
+        <Product>CosmosStack.Sniffers</Product>
+        <Authors>AlexLEWIS;CosmosStack</Authors>
+        <RepositoryUrl>https://github.com/cosmos-open/cosmos-mimetype-sniffer</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageProjectUrl>https://github.com/cosmos-open/cosmos-mimetype-sniffer</PackageProjectUrl>
+        <PackageIcon>icon.png</PackageIcon>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageTags>CosmosStack;CosmosComponents;Sniffer;Framework</PackageTags>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    </PropertyGroup>
+
 </Project>

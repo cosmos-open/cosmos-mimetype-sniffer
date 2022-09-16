@@ -1,8 +1,8 @@
 <Project>
 
     <PropertyGroup>
-        <FileTypeSniffer-RefVersion>0.1.0</FileTypeSniffer-RefVersion>
-        <Dependency-RefVersion>0.1.0</Dependency-RefVersion>
+        <FileTypeSniffer-RefVersion>0.4.7.3</FileTypeSniffer-RefVersion>
+        <Dependency-RefVersion>0.4.7.3</Dependency-RefVersion>
     </PropertyGroup>
 
 </Project>
