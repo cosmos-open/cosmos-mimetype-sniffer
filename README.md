@@ -13,9 +13,9 @@ This project depend on [OPENCOSMOS/FileTypeSniffer](https://github.com/cosmos-op
 | Package Name                                                                                                                                                                           | Version                                                                                                           | Downloads                                                                                                          |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
 | [CosmosStack.Extensions.MimeTypeSniffer](https://www.nuget.org/packages/CosmosStack.Extensions.MimeTypeSniffer/)                                                               | ![](https://img.shields.io/nuget/v/CosmosStack.Extensions.MimeTypeSniffer.svg)                                | ![](https://img.shields.io/nuget/dt/CosmosStack.Extensions.MimeTypeSniffer.svg)                                |
-| [CosmosStack.Extensions.MimeTypeSniffer.Extra.DependencyInjection](https://www.nuget.org/packages/CosmosStack.Extensions.MimeTypeSniffer.Extra.DependencyInjection/) | ![](https://img.shields.io/nuget/v/CosmosStack.Extensions.MimeTypeSniffer.Extra.DependencyInjection.svg) | ![](https://img.shields.io/nuget/dt/CosmosStack.Extensions.MimeTypeSniffer.Extra.DependencyInjection.svg) |
-| [CosmosStack.Extensions.MimeTypeSniffer.Extra.Autofac](https://www.nuget.org/packages/CosmosStack.Extensions.MimeTypeSniffer.Extra.Autofac/)                         | ![](https://img.shields.io/nuget/v/CosmosStack.Extensions.MimeTypeSniffer.Extra.Autofac.svg)             | ![](https://img.shields.io/nuget/dt/CosmosStack.Extensions.MimeTypeSniffer.Extra.Autofac.svg)             |
-| [CosmosStack.Extensions.MimeTypeSniffer.Extra.AspectCoreInjector](https://www.nuget.org/packages/CosmosStack.Extensions.MimeTypeSniffer.Extra.AspectCoreInjector/)   | ![](https://img.shields.io/nuget/v/CosmosStack.Extensions.MimeTypeSniffer.Extra.AspectCoreInjector.svg)  | ![](https://img.shields.io/nuget/dt/CosmosStack.Extensions.MimeTypeSniffer.Extra.AspectCoreInjector.svg)  |
+| [CosmosStack.Extensions.MimeTypeSniffer.DependOn.DependencyInjection](https://www.nuget.org/packages/CosmosStack.Extensions.MimeTypeSniffer.DependOn.DependencyInjection/) | ![](https://img.shields.io/nuget/v/CosmosStack.Extensions.MimeTypeSniffer.DependOn.DependencyInjection.svg) | ![](https://img.shields.io/nuget/dt/CosmosStack.Extensions.MimeTypeSniffer.DependOn.DependencyInjection.svg) |
+| [CosmosStack.Extensions.MimeTypeSniffer.DependOn.Autofac](https://www.nuget.org/packages/CosmosStack.Extensions.MimeTypeSniffer.DependOn.Autofac/)                         | ![](https://img.shields.io/nuget/v/CosmosStack.Extensions.MimeTypeSniffer.DependOn.Autofac.svg)             | ![](https://img.shields.io/nuget/dt/CosmosStack.Extensions.MimeTypeSniffer.DependOn.Autofac.svg)             |
+| [CosmosStack.Extensions.MimeTypeSniffer.DependOn.AspectCoreInjector](https://www.nuget.org/packages/CosmosStack.Extensions.MimeTypeSniffer.DependOn.AspectCoreInjector/)   | ![](https://img.shields.io/nuget/v/CosmosStack.Extensions.MimeTypeSniffer.DependOn.AspectCoreInjector.svg)  | ![](https://img.shields.io/nuget/dt/CosmosStack.Extensions.MimeTypeSniffer.DependOn.AspectCoreInjector.svg)  |
 
 ## Usage
 
@@ -24,8 +24,8 @@ This project depend on [OPENCOSMOS/FileTypeSniffer](https://github.com/cosmos-op
 Choose one kind of dependency extensions that you need and install it via nuget.
 
 ```
-Install-Package CosmosStack.Extensions.MimeTypeSniffer.Extra.DependencyInjection
-Install-Package CosmosStack.Extensions.MimeTypeSniffer.Extra.Autofac
+Install-Package CosmosStack.Extensions.MimeTypeSniffer.DependOn.DependencyInjection
+Install-Package CosmosStack.Extensions.MimeTypeSniffer.DependOn.Autofac
 ```
 
 or use directly
@@ -139,6 +139,6 @@ People or projects that have made a great contribution to this project:
 
 ## License
 
-Member project of [Cosmos Stack](https://github.com/cosmos-stack~~~~).
+Member project of [Cosmos Stack](https://github.com/cosmos-stack).
 
 [Apache 2.0 License](/LICENSE)
