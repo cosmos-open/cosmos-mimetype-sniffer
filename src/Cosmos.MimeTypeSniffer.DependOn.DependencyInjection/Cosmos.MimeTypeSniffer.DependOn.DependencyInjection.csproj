@@ -11,6 +11,10 @@
         <Description>Extra package for Microsoft DependencyInjection extensions and Cosmos MimeTypeSniffer business extensions.</Description>
     </PropertyGroup>
 
+    <ItemGroup>
+      <None Remove="Cosmos.Extensions.MimeTypeSniffer.DependOn.DependencyInjection.xml" />
+    </ItemGroup>
+
     <Import Project="..\..\common.props" />
 
     <Import Project="dependency.props" />

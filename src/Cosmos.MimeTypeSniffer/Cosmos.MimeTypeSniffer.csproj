@@ -12,6 +12,10 @@
         <Description>Mine type sniffer for Cosmos Business Extensions.</Description>
     </PropertyGroup>
 
+    <ItemGroup>
+      <None Remove="Cosmos.Extensions.MimeTypeSniffer.xml" />
+    </ItemGroup>
+
     <Import Project="..\..\common.props" />
 
     <Import Project="dependency.props" />

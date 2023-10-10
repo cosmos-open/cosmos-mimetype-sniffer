@@ -1,13 +1,13 @@
 <Project>
     <PropertyGroup Label="Package">
-        <Product>CosmosStack.Sniffers</Product>
+        <Product>Cosmos.Sniffers</Product>
         <Authors>AlexLEWIS;CosmosStack</Authors>
         <RepositoryUrl>https://github.com/cosmos-open/cosmos-mimetype-sniffer</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageProjectUrl>https://github.com/cosmos-open/cosmos-mimetype-sniffer</PackageProjectUrl>
         <PackageIcon>icon.png</PackageIcon>
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
-        <PackageTags>CosmosStack;CosmosComponents;Sniffer;Framework</PackageTags>
+        <PackageTags>Cosmos;CosmosComponents;Sniffer;Framework</PackageTags>
     </PropertyGroup>
 
     <PropertyGroup>

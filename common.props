@@ -1,14 +1,14 @@
 <Project>
 
     <PropertyGroup>
-        <TargetFrameworks>net6.0;net5.0;netcoreapp3.1;net48;net472;net462;net452;</TargetFrameworks>
+        <TargetFrameworks>net7.0;net6.0;</TargetFrameworks>
     </PropertyGroup>
 
     <PropertyGroup>
         <RootNamespace />
         <LangVersion>latest</LangVersion>
-        <NoWarn Condition=" '$(Configuration)' == 'Debug' ">$(NoWarn);NETSDK1138</NoWarn>
-        <NoWarn Condition=" '$(Configuration)' == 'Release' ">$(NoWarn);CS1591;NETSDK1138</NoWarn>
+        <NoWarn Condition=" '$(Configuration)' == 'Debug' ">$(NoWarn);NETSDK1138;NU1803</NoWarn>
+        <NoWarn Condition=" '$(Configuration)' == 'Release' ">$(NoWarn);CS1591;NETSDK1138;NU1803</NoWarn>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -16,8 +16,6 @@
     </PropertyGroup>
 
     <Import Project="asset/props/target.feature.props"/>
-
-    <Import Project="asset/props/sourcelink.env.props"/>
 
     <Import Project="asset/props/package.props"/>
 
