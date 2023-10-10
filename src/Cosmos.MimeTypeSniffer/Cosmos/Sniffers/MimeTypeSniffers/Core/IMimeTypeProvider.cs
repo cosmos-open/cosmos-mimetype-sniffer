@@ -11,5 +11,5 @@ public interface IMimeTypeProvider
     /// 获取所有 MIME 类型
     /// </summary>
     /// <returns></returns>
-    Dictionary<string, string> GetMimeTypes();
+    IDictionary<string, string> GetMimeTypes();
 }

@@ -22,8 +22,7 @@ public static class DependencyExtensions
     public static TRegister RegisterMimeTypeSniffer<TRegister>(this TRegister register, Action<MimeTypeSnifferOptions> configure = null)
         where TRegister : DependencyProxyRegister
     {
-        if (register is null)
-            throw new ArgumentNullException(nameof(register));
+        register.Require();
 
         var options = new MimeTypeSnifferOptions();
         configure?.Invoke(options);
@@ -49,6 +48,6 @@ public static class DependencyExtensions
         where TRegister : DependencyProxyRegister
     {
         if (!register.IsRegistered(typeof(IFileTypeSniffer)))
-            register.AddFileTypeSniffer(options.FileTypeSnifferFallbackOptions);
+            register.RegisterFileTypeSniffer(options.FileTypeSnifferFallbackOptions);
     }
 }

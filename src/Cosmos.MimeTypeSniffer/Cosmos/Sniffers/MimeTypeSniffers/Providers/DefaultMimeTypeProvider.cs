@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿using Collections.Pooled;
 using Cosmos.Sniffers.MimeTypeSniffers.Core;
 
 namespace Cosmos.Sniffers.MimeTypeSniffers.Providers;
@@ -9,11 +9,11 @@ namespace Cosmos.Sniffers.MimeTypeSniffers.Providers;
 /// </summary>
 public class DefaultMimeTypeProvider : IMimeTypeProvider
 {
-    private readonly Dictionary<string, string> _mimeTypes;
+    private readonly PooledDictionary<string, string> _mimeTypes;
 
     public DefaultMimeTypeProvider()
     {
-        _mimeTypes = new Dictionary<string, string>();
+        _mimeTypes = new();
         Initialize();
     }
 
@@ -574,5 +574,5 @@ public class DefaultMimeTypeProvider : IMimeTypeProvider
         _mimeTypes.Add("zsh", "text/x-script.zsh");
     }
 
-    public Dictionary<string, string> GetMimeTypes() => _mimeTypes;
+    public IDictionary<string, string> GetMimeTypes() => _mimeTypes;
 }

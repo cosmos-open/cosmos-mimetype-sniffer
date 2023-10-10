@@ -14,19 +14,11 @@ internal sealed class OptimizedOrdinalIgnoreCaseComparer : IEqualityComparer<str
     static int ToUpper(int c)
     {
         // check if the char is within the lowercase range
-        if ((uint) (c - 'a') <= 'z' - 'a')
+        if ((uint)(c - 'a') <= 'z' - 'a')
             return c - 0x20;
 
         return c;
     }
-
-    //static int ToLower (int c)
-    //{
-    //	if (c >= 0x41 && c <= 0x5A)
-    //		return c + 0x20;
-    //
-    //	return c;
-    //}
 
     /// <summary>
     /// Compare the input strings for equality.
@@ -74,8 +66,7 @@ internal sealed class OptimizedOrdinalIgnoreCaseComparer : IEqualityComparer<str
     /// </exception>
     public int GetHashCode(string obj)
     {
-        if (obj is null)
-            throw new ArgumentNullException(nameof(obj));
+        obj.Require();
 
         unsafe
         {

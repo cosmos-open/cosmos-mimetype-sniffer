@@ -38,7 +38,7 @@ public class MimeTypeLibrary
         }
     }
 
-    public void Register(Dictionary<string, string> dict)
+    public void Register(IDictionary<string, string> dict)
     {
         if (dict == null || !dict.Any())
             return;
