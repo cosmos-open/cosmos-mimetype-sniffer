@@ -11,7 +11,7 @@ public class AutofacInitTests
     public void AutofacTest()
     {
         var builder = new ContainerBuilder();
-        builder.RegisterFileTypeSniffer();
+        builder.RegisterCosmosFileTypeSniffer();
         builder.RegisterCosmosMimeTypeSniffer();
         var container = builder.Build();
 

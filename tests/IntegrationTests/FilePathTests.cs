@@ -15,7 +15,7 @@ public class FilePathTests
     public FilePathTests()
     {
         var services = new ServiceCollection();
-        services.AddFileTypeSniffer();
+        services.AddCosmosFileTypeSniffer();
         services.AddCosmosMimeTypeSniffer();
         var provider = services.BuildServiceProvider();
 

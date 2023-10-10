@@ -15,7 +15,7 @@ public class FileTests
     public FileTests()
     {
         var services = new ServiceCollection();
-        services.AddFileTypeSniffer();
+        services.AddCosmosFileTypeSniffer();
         services.AddCosmosMimeTypeSniffer();
         var provider = services.BuildServiceProvider();
 

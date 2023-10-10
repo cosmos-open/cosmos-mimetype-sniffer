@@ -11,7 +11,7 @@ public class MsdiInitTests
     public void MsdiTest()
     {
         var services = new ServiceCollection();
-        services.AddFileTypeSniffer();
+        services.AddCosmosFileTypeSniffer();
         services.AddCosmosMimeTypeSniffer();
         var provider = services.BuildServiceProvider();
 
